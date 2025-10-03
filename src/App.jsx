@@ -3,13 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import NavBar from './componentes/NavBar'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-   <h1 className="text-3xl bg-red-500 font-bold underline text-blue-600">
-      Hello Tailwind + React + Vite!
-    </h1>
+   <div>
+    <NavBar />
+   </div>
 
   )
 }
