@@ -1,0 +1,156 @@
+<!--
+
+
+
+📚 Aula Explicada Passo a Passo: Navbar + Menu Hambúrguer em React + TailwindCSS
+🎯 O que vamos aprender
+1. Como criar uma barra de navegação (navbar) em React.
+2. O que é o menu hambúrguer e como ele funciona em telas pequenas.
+3. Como usar o estado (useState) para abrir e fechar a sidebar.
+4. Como o TailwindCSS nos ajuda com classes prontas para layout e responsividade.
+
+
+
+1️⃣ Estrutura da Navbar
+Pensa assim:
+. A navbar é um retângulo fixo no topo da página, com:
+  . O logo ou nome à esquerda.
+  . Os links no meio ou à direita.
+  . O botão hambúrguer que aparece só no celular.
+
+👉 Em React, cada pedaço da tela é um componente. Então criamos um componente chamado Navbar.
+
+import React, { useState } from "react"
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false) // estado para controlar se o menu está aberto ou fechado
+
+  return (
+    <nav className="fixed w-full flex items-center justify-between px-6 py-4 bg-black/80 text-white z-40">
+      <h1 className="text-2xl font-bold">
+        <span className="text-sky-300">Mikael</span> Rocha
+      </h1>
+    </nav>
+  )
+}
+
+ 
+🔎 Aqui temos:
+. useState(false) → começa fechado (false).
+. nav → a barra de navegação.
+. fixed w-full → fixa no topo e ocupa a largura da tela inteira.
+. px-6 py-4 → espaçamento interno.
+. bg-black/80 → fundo preto com transparência.
+
+ 
+
+
+2️⃣ Links da navbar:
+
+Agora colocamos os links de navegação.
+Queremos que eles só apareçam em telas maiores (computador).
+No Tailwind, fazemos isso com hidden md:flex.
+
+<ul className="hidden md:flex gap-8 text-lg">
+  <li><a href="#sobre">Sobre</a></li>
+  <li><a href="#projeto">Projetos</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#contato">Contato</a></li>
+</ul>
+
+
+🔎 Aqui:
+. hidden → por padrão fica invisível.
+. md:flex → a partir do tamanho md (tablet para cima) vira flex e aparece.
+. gap-8 → espaçamento entre os itens.
+
+3️⃣ Botão Hambúrguer
+
+Esse é o botão que aparece somente no celular.
+Ele abre o menu lateral quando clicamos.
+
+<button
+  className="md:hidden text-3xl"
+  onClick={() => setOpen(true)}
+>
+  <i className="bx bx-menu"></i>
+</button>
+
+
+🔎 Aqui:
+. md:hidden → o botão só aparece em telas menores que md.
+. text-3xl → aumenta o tamanho do ícone.
+. onClick={() => setOpen(true)} → quando clicamos, mudamos o estado open para true.
+. i className="bx bx-menu" → ícone do hambúrguer (as 3 listrinhas).
+
+
+
+
+4️⃣ Sidebar (menu lateral no mobile):
+
+Agora o truque principal: só queremos mostrar a sidebar se open === true.
+No React, usamos {open && (...)}.
+
+{open && (
+  <div className="fixed top-0 left-0 w-2/3 h-full bg-black/90 text-white flex flex-col p-6 z-50">
+    {/* Botão fechar */}
+    <button
+      className="self-end text-3xl mb-6"
+      onClick={() => setOpen(false)}
+    >
+      <i className="bx bx-x"></i>
+    </button>
+
+    {/* Links mobile */}
+    <ul className="flex flex-col gap-6 text-lg">
+      <li><a href="#sobre" onClick={() => setOpen(false)}>Sobre</a></li>
+      <li><a href="#projeto" onClick={() => setOpen(false)}>Projetos</a></li>
+      <li><a href="#skills" onClick={() => setOpen(false)}>Skills</a></li>
+      <li><a href="#contato" onClick={() => setOpen(false)}>Contato</a></li>
+    </ul>
+  </div>
+)}
+
+
+🔎 Detalhes importantes:
+. {open && (...)} → significa “se open for true, renderiza isso”.
+. fixed top-0 left-0 → fixa a sidebar no canto superior esquerdo.
+. w-2/3 h-full → ocupa 2/3 da tela em largura e 100% da altura.
+. bg-black/90 → fundo preto semi-transparente.
+. z-50 → garante que aparece por cima de tudo.
+. setOpen(false) → fecha o menu quando clicamos no X ou em um link.
+
+
+
+5️⃣ Como tudo funciona junto (fluxo):
+1. Página começa → open = false → sidebar não aparece.
+2. Clicamos no botão hambúrguer → setOpen(true) → agora open = true.
+3. O React re-renderiza → a condição {open && (...)} passa a ser verdadeira → sidebar aparece.
+4. Dentro da sidebar, clicamos no X ou em algum link → setOpen(false).
+5. React re-renderiza → open = false → sidebar some. 🎉
+
+
+
+6️⃣ Tailwind na prática:
+
+. Responsividade:
+  . hidden md:flex → mostra só no desktop.
+  . md:hidden → mostra só no celular.
+
+. Layout da sidebar:
+  . flex flex-col → organiza os links em coluna.
+  . gap-6 → espaço entre os itens.
+
+. Estilização do fundo:
+  . bg-black/90 → cor preta transparente.
+  . fixed top-0 left-0 → cobre a tela inteira (como um overlay).
+
+✅ Resumo Final
+. Criamos um estado (open) para controlar se o menu lateral está aberto ou fechado.
+. No desktop → mostramos os links direto.
+. No mobile → mostramos um botão hambúrguer que abre a sidebar.
+. O React usa a lógica {open && (...)} para decidir se renderiza ou não a sidebar.
+. O Tailwind nos ajudou com responsividade, espaçamentos e fundo fixo.
+
+
+-->
