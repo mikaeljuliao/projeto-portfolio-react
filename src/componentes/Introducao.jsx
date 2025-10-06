@@ -10,8 +10,9 @@ export default function Introducao () {
             </video>
         </div>
 
-        <div className='w-full gap-6 md-1/2 mt-8 flex flex-col md:mt-0 md:pl-12'>
-            <div className='flex items-center  gap-2 text-xl text-sky-400 font-semibold'>
+        <div className='w-full gap-6 sm:w-1/2 mt-8 lg-w-2/3 flex flex-col md:mt-0 md:pl-12'>
+            <div className='flex items-center  gap-2 text-xl border border-gray-500 rounded-lg
+             text-sky-400 font-semibold'>
                <i class='bx bxl-sketch'></i>
       Front-end Developer Portifolio
             </div>
@@ -22,10 +23,10 @@ export default function Introducao () {
   animate-gradient-x  bg-[length:200%_200%]'
             >a melhor experiencia</span> de projeto</h1> 
 
-             <p>Sou desenvolvedor front-end com experiência na criação de sites responsivos e interfaces modernas.
+             <p className='font-normal text-lg md:text-xl text-gray-200'>Sou desenvolvedor front-end com experiência na criação de sites responsivos e interfaces modernas.
        Confira minhas habilidades..</p>
 
-       <button><i class='bx bx-send'></i>Entre em contato comigo</button>
+       <button className='flex items-end gap-2 text-xl'><i class='bx bx-send'></i>Entre em contato comigo</button>
         </div>
 
 
