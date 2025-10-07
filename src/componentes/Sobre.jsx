@@ -5,7 +5,7 @@ export default function Sobre() {
     <section
       id="sobre"
       className="min-h-screen w-full flex flex-col items-center justify-center 
-      px-6 md:px-16 text-white relative"
+      px-6 md:px-16 text-white relative py-5"
     >
       {/* Título da seção */}
       <h1 className="text-3xl md:text-4xl font-semibold mt-10 text-center">
@@ -46,6 +46,11 @@ export default function Sobre() {
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
           transition-all duration-300"
         >
+           <img
+            src="images/grid2.png"
+            alt="Tecnologias"
+            className="w-full h-1/2 object-cover rounded-md mt-auto"
+          />
       
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Pilha de tecnologia
@@ -54,11 +59,7 @@ export default function Sobre() {
             Sou especialista em diversas linguagens, frameworks e ferramentas
             que me permitem construir aplicativos robustos e escaláveis.
           </p>
-          <img
-            src="images/grid2.png"
-            alt="Tecnologias"
-            className="w-full h-1/2 object-cover rounded-md mt-auto"
-          />
+         
         </div>
 
         {/* --- CARD 3 --- */}
@@ -68,6 +69,16 @@ export default function Sobre() {
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
           transition-all duration-300 lg:row-span-2"
         >
+            <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            src="video/glob.mp4"
+            type="video/mp4"
+            className="w-full h-[55%] object-cover mix-blend-lighten bg-none rounded-md mb-4"
+          />
+
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Flexível quanto ao formato de trabalho, pronto para novos projetos.
           </h2>
@@ -76,16 +87,6 @@ export default function Sobre() {
             procuro principalmente oportunidades presenciais. No entanto, também
             estou aberto a propostas de trabalho remoto.
           </p>
-
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            src="videos/glob.mp4"
-            type="video/mp4"
-            className="w-full h-[45%] object-cover rounded-md mb-4"
-          />
 
           <button
             className="mt-auto border border-sky-400 px-4 py-2 rounded-md
@@ -104,6 +105,12 @@ export default function Sobre() {
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
           transition-all duration-300 sm:col-span-2"
         >
+           <img
+            src="images/grid4.png"
+            alt="Paixão por código"
+            className="w-full h-1/2 object-cover rounded-md mt-auto"
+          />
+
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Minha paixão por código
           </h2>
@@ -112,11 +119,7 @@ export default function Sobre() {
             Programar não é apenas minha profissão, é minha paixão. Gosto de
             explorar novas tecnologias e aprimorar minhas habilidades.
           </p>
-          <img
-            src="images/grid4.png"
-            alt="Paixão por código"
-            className="w-full h-1/2 object-cover rounded-md mt-auto"
-          />
+      
         </div>
       </div>
     </section>
