@@ -6,6 +6,7 @@ import './App.css'
 // componentes
 import NavBar from './componentes/NavBar'
 import Introducao from './componentes/Introducao'
+import Sobre from './componentes/Sobre'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
 />
     <NavBar />
     <Introducao />
+    <Sobre />
    </div>
 
   )
