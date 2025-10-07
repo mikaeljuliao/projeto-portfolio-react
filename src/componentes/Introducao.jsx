@@ -34,7 +34,8 @@ export default function Introducao () {
        Confira minhas habilidades..</p>
 
        <button className='flex items-end gap-1 text-xl border border-sky-800 px-2 py-3 mt-5
-        rounded-2xl w-fit'>
+        rounded-2xl w-fit transition-all duration-300 hover:rounded-md hover:text-sky-400 
+        hover:shadow-[0_0_10px_#38bdf8]'>
         <i class='bx bx-send'></i>Entre em contato comigo</button>
         </div>
 
