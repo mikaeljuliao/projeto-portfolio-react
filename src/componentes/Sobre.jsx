@@ -46,6 +46,7 @@ export default function Sobre() {
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
           transition-all duration-300"
         >
+      
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Pilha de tecnologia
           </h2>
@@ -121,3 +122,12 @@ export default function Sobre() {
     </section>
   )
 }
+{/* pelo oque vi, as aluturas com vh de cada card, foram removidas 
+    e tambem foi removido a classe container da section,
+    foi adicionado relative, alem disso foi adicionado um fundo tranaparente preto e um novo 
+    shadow com transicoes:
+      border-sky-400/30 backdrop-blur-md  overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
+  transition-all duration-300" e pra solucionar o lance dos tamanho que antes estava 
+  bugando com as alturas com vh nos card, no container principal dos cards foi adicionado max-w-6xl
+  pra ocupar ate o maximo de 6x1 permitindo que cresa o oque precisar */}
+

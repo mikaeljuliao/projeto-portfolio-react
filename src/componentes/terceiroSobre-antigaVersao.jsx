@@ -85,5 +85,6 @@ export default function Sobre() {
 
       </div>
     </section>
+    
   )
 }
