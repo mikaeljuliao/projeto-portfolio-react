@@ -5,7 +5,7 @@ export default function Sobre() {
     <section
       id="sobre"
       className="min-h-screen w-full flex flex-col items-center justify-center 
-      px-6 md:px-16 text-white relative py-5"
+      px-6 md:px-16 text-white relative py-6"
     >
       {/* Título da seção */}
       <h1 className="text-3xl md:text-4xl font-semibold mt-10 text-center">
@@ -46,12 +46,12 @@ export default function Sobre() {
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
           transition-all duration-300"
         >
-           <img
+            <img
             src="images/grid2.png"
             alt="Tecnologias"
             className="w-full h-1/2 object-cover rounded-md mt-auto"
           />
-      
+
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Pilha de tecnologia
           </h2>
@@ -59,45 +59,52 @@ export default function Sobre() {
             Sou especialista em diversas linguagens, frameworks e ferramentas
             que me permitem construir aplicativos robustos e escaláveis.
           </p>
-         
+      
         </div>
 
-        {/* --- CARD 3 --- */}
-        <div
-          className="relative flex flex-col items-start bg-slate-900/40 
-          border border-sky-400/30 backdrop-blur-md rounded-xl
-          overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
-          transition-all duration-300 lg:row-span-2"
-        >
-            <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            src="video/glob.mp4"
-            type="video/mp4"
-            className="w-full h-[55%] object-cover mix-blend-lighten bg-none rounded-md mb-4"
-          />
+    
+       {/* --- CARD 3 --- */}
+<div
+  className="relative flex flex-col justify-end 
+  border border-sky-400/30 backdrop-blur-md rounded-xl 
+  overflow-hidden hover:shadow-[0_0_15px_#38bdf8]
+  transition-all duration-300 lg:row-span-2 h-[80vh]"
+>
+  {/* Vídeo de fundo */}
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    src="video/glob.mp4"
+    type="video/mp4"
+    className="absolute inset-0 w-full h-2/3 object-cover z-0"
+  />
 
-          <h2 className="text-xl font-semibold mb-2 text-sky-300">
-            Flexível quanto ao formato de trabalho, pronto para novos projetos.
-          </h2>
-          <p className="text-sm leading-relaxed mb-4">
-            Estou baseado no Brasil, em Fortaleza (bairro Granja Lisboa), e
-            procuro principalmente oportunidades presenciais. No entanto, também
-            estou aberto a propostas de trabalho remoto.
-          </p>
+  {/* Camada escura sutil pra dar contraste no texto */}
+  <div className="absolute inset-0 bg-black/40 z-10"></div>
 
-          <button
-            className="mt-auto border border-sky-400 px-4 py-2 rounded-md
-            hover:bg-sky-500/30 hover:shadow-[0_0_12px_#38bdf8]
-            transition duration-300 flex items-center gap-2"
-          >
-            <i className="bx bx-link-external text-sky-300"></i>
-            <a href="#contato">Entre em contato comigo</a>
-          </button>
-        </div>
+  {/* Conteúdo */}
+  <div className="relative z-20 p-4 flex flex-col">
+    <h2 className="text-xl font-semibold mb-2 text-sky-300">
+      Flexível quanto ao formato de trabalho, pronto para novos projetos.
+    </h2>
+    <p className="text-sm leading-relaxed mb-4">
+      Estou baseado no Brasil, em Fortaleza (bairro Granja Lisboa), e procuro
+      principalmente oportunidades presenciais. No entanto, também estou aberto
+      a propostas de trabalho remoto.
+    </p>
 
+    <button
+      className="mt-auto border border-sky-400 px-4 py-2 rounded-md
+      hover:bg-sky-500/30 hover:shadow-[0_0_12px_#38bdf8]
+      transition duration-300 flex items-center gap-2 w-fit"
+    >
+      <i className="bx bx-link-external text-sky-300"></i>
+      <a href="#contato">Entre em contato comigo</a>
+    </button>
+  </div>
+</div>
         {/* --- CARD 4 --- */}
         <div
           className="relative flex flex-col items-start bg-slate-900/40 
@@ -110,7 +117,7 @@ export default function Sobre() {
             alt="Paixão por código"
             className="w-full h-1/2 object-cover rounded-md mt-auto"
           />
-
+          
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Minha paixão por código
           </h2>
@@ -119,18 +126,9 @@ export default function Sobre() {
             Programar não é apenas minha profissão, é minha paixão. Gosto de
             explorar novas tecnologias e aprimorar minhas habilidades.
           </p>
-      
+         
         </div>
       </div>
     </section>
   )
 }
-{/* pelo oque vi, as aluturas com vh de cada card, foram removidas 
-    e tambem foi removido a classe container da section,
-    foi adicionado relative, alem disso foi adicionado um fundo tranaparente preto e um novo 
-    shadow com transicoes:
-      border-sky-400/30 backdrop-blur-md  overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
-  transition-all duration-300" e pra solucionar o lance dos tamanho que antes estava 
-  bugando com as alturas com vh nos card, no container principal dos cards foi adicionado max-w-6xl
-  pra ocupar ate o maximo de 6x1 permitindo que cresa o oque precisar */}
-
