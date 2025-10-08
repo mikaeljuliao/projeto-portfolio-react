@@ -8,7 +8,7 @@ export default function Sobre() {
       px-6 md:px-16 text-white relative py-6"
     >
       {/* Título da seção */}
-      <h1 className="text-3xl md:text-4xl font-semibold mt-10 text-center">
+      <h1 className="text-3xl md:text-4xl font-semibold mt-10 text-center py-11">
         Olá 👋
       </h1>
 
@@ -25,10 +25,10 @@ export default function Sobre() {
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
           transition-all duration-300"
         >
-          <img
-            src="images/eu-editado-portifolio3.png"
+          <img 
+            src="imagems/eu-editado-portifolio3.png"
             alt="Foto Mikael"
-            className="w-full h-1/2 object-cover rounded-md mb-4"
+            className="w-full  h-1/2 object-cover rounded-md mb-4"
           />
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Olá, eu sou Mikael
@@ -47,7 +47,7 @@ export default function Sobre() {
           transition-all duration-300"
         >
             <img
-            src="images/grid2.png"
+            src="imagem/grid2.png"
             alt="Tecnologias"
             className="w-full h-1/2 object-cover rounded-md mt-auto"
           />
@@ -117,7 +117,6 @@ export default function Sobre() {
             alt="Paixão por código"
             className="w-full h-1/2 object-cover rounded-md mt-auto"
           />
-          
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Minha paixão por código
           </h2>
