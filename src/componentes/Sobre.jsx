@@ -35,7 +35,7 @@ export default function Sobre() {
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Olá, eu sou Mikael
           </h2>
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm leading-relaxed text-gray-400 font-semibold">
            Sou desenvolvedor front-end com 12 meses de experiência no desenvolvimento 
            de aplicações web modernas e de alta performance.
           Antes disso, atuei por mais de 1 ano e meio como designer gráfico, 
@@ -64,7 +64,7 @@ export default function Sobre() {
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Pilha de tecnologia
           </h2>
-          <p className="text-sm leading-relaxed mb-4">
+          <p className="text-sm leading-relaxed mb-4 text-gray-400 font-semibold">
   Trabalho com as principais tecnologias para criar projetos modernos e funcionais: 
   JavaScript (ES6+), React, HTML, CSS e frameworks como Tailwind e Bootstrap, além do uso constante do Git para versionamento.
   Tenho experiência com integração de APIs REST, boas práticas de Clean Code e princípios de UX/UI, garantindo desempenho e uma ótima experiência ao usuário.
@@ -103,7 +103,7 @@ export default function Sobre() {
     <h2 className="text-xl font-semibold mb-2 text-sky-300">
       Flexível quanto ao formato de trabalho, pronto para novos projetos.
     </h2>
-    <p className="text-sm leading-relaxed mb-4">
+    <p className="text-sm leading-relaxed mb-4 text-gray-400 font-semibold">
       Moro em Fortaleza (CE) e tenho flexibilidade para atuar tanto de forma presencial quanto remota. 
   Estou disponível para colaborações em regime PJ, CLT ou como freelancer, conforme a necessidade do projeto.
   Valorizo trabalho em equipe, comunicação clara e entregas consistentes, sempre buscando agregar valor 
@@ -135,7 +135,7 @@ export default function Sobre() {
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Minha paixão por código
           </h2>
-          <p className="text-sm leading-relaxed mb-4">
+          <p className="text-sm leading-relaxed mb-4 text-gray-400 font-semibold">
            Encontrei na programação uma forma de transformar ideias em algo real e útil.  
   Gosto de entender como as coisas funcionam, resolver problemas e criar projetos que causem impacto.  
   Essa paixão me motiva a continuar aprendendo e evoluindo a cada novo desafio.

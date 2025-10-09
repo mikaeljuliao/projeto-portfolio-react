@@ -10,7 +10,7 @@ export default function Projetos() {
       {/* Card 1 */}      
     <div >
        <div className=" border-2 border-sky-400 rounded-xl 
-       overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#38bdf8]
+       overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]
         ">
             <video  id="projetoVideo1" src="video/site-medicamentos.mp4"></video>
     
@@ -44,7 +44,7 @@ export default function Projetos() {
       {/* Card 2 */}    
     <div className="">
        <div className="border-2 border-sky-400 rounded-lg overflow-hidden
-       shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#38bdf8]">
+       shadow-[0_0_10px_#38bdf8]  hover:shadow-[0_0_20px_#1e40ff]">
             <video  id="projetoVideo1" src="video/portifolio-pessoal.mp4"></video>
     
             <div className="hover-sign"></div>
@@ -78,7 +78,7 @@ export default function Projetos() {
      {/* Card 3 */}      
     <div className="">
        <div className="border-2 border-sky-400 rounded-lg overflow-hidden shadow-[0_0_10px_#38bdf8]
-       hover:shadow-[0_0_20px_#38bdf8]
+      hover:shadow-[0_0_20px_#1e40ff]
         ">
             <video  id="projetoVideo1" src="video/controle-de-gasto.mp4"></video>
     

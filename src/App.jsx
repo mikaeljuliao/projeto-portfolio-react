@@ -9,6 +9,7 @@ import Introducao from './componentes/Introducao'
 import Sobre from './componentes/Sobre'
 import Projetos from './componentes/Projetos'
 import Skills from './componentes/Skills'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -26,6 +27,7 @@ function App() {
     <Introducao />
     <Sobre />
     <Projetos />
+    <Skills />
 
    </div>
 
