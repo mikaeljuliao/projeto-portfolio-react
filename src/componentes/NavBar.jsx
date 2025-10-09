@@ -8,7 +8,7 @@ export default function Navbar() {
      text-white z-40 shadow-[0_0_3px_#38bdf8] ">
       {/* Logo */}
       <h1 className="text-2xl font-bold">
-        <span className="text-sky-300">Mikael</span> Rocha
+        <span className="text-sky-300">Mikael</span> da Rocha
       </h1>
 
       {/* Menu desktop */}

@@ -36,8 +36,13 @@ export default function Sobre() {
             Olá, eu sou Mikael
           </h2>
           <p className="text-sm leading-relaxed">
-            Com 8 meses de experiência, aprimorei minhas habilidades em
-            desenvolvimento front-end, criando sites dinâmicos e responsivos.
+           Sou desenvolvedor front-end com 12 meses de experiência no desenvolvimento 
+           de aplicações web modernas e de alta performance.
+          Antes disso, atuei por mais de 1 ano e meio como designer gráfico, 
+          o que fortaleceu minha visão de UX/UI e ampliou minha experiência com 
+          clientes e identidade visual.
+          Atualmente, trabalho como freelancer front-end, aperfeiçoando minhas 
+          habilidades a cada projeto realizado.
           </p>
         </div>
 
