@@ -25,11 +25,13 @@ export default function Sobre() {
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
           transition-all duration-300"
         >
+          { /*
           <img 
             src="imagems/eu-editado-portifolio3.png"
             alt="Foto Mikael"
             className="w-full  h-1/2 object-cover rounded-md mb-4"
           />
+           */}
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Olá, eu sou Mikael
           </h2>
@@ -46,19 +48,26 @@ export default function Sobre() {
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
           transition-all duration-300"
         >
+          {/*
             <img
             src="imagem/grid2.png"
             alt="Tecnologias"
             className="w-full h-1/2 object-cover rounded-md mt-auto"
           />
-
+        */}
+        
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Pilha de tecnologia
           </h2>
           <p className="text-sm leading-relaxed mb-4">
-            Sou especialista em diversas linguagens, frameworks e ferramentas
-            que me permitem construir aplicativos robustos e escaláveis.
-          </p>
+  Trabalho com as principais tecnologias para criar projetos modernos e funcionais: 
+  JavaScript (ES6+), React, HTML, CSS e frameworks como Tailwind e Bootstrap, além do uso constante do Git para versionamento.
+  Tenho experiência com integração de APIs REST, boas práticas de Clean Code e princípios de UX/UI, garantindo desempenho e uma ótima experiência ao usuário.
+  Também possuo conhecimento em Git Flow, integração e entrega contínuas (CI/CD) e metodologias ágeis como Scrum.
+  Busco aplicar cada tecnologia de forma estratégica, entregando soluções escaláveis e bem estruturadas.
+</p>
+
+
       
         </div>
 
@@ -90,9 +99,10 @@ export default function Sobre() {
       Flexível quanto ao formato de trabalho, pronto para novos projetos.
     </h2>
     <p className="text-sm leading-relaxed mb-4">
-      Estou baseado no Brasil, em Fortaleza (bairro Granja Lisboa), e procuro
-      principalmente oportunidades presenciais. No entanto, também estou aberto
-      a propostas de trabalho remoto.
+      Moro em Fortaleza (CE) e tenho flexibilidade para atuar tanto de forma presencial quanto remota. 
+  Estou disponível para colaborações em regime PJ, CLT ou como freelancer, conforme a necessidade do projeto.
+  Valorizo trabalho em equipe, comunicação clara e entregas consistentes, sempre buscando agregar valor 
+  e resolver problemas reais.
     </p>
 
     <button
@@ -113,17 +123,17 @@ export default function Sobre() {
           transition-all duration-300 sm:col-span-2"
         >
            <img
-            src="images/grid4.png"
+            src="imagem/grid4.png"
             alt="Paixão por código"
-            className="w-full h-1/2 object-cover rounded-md mt-auto"
+            className=" flex flex-col m-auto items-center justify-center w-1/2 h-full object-cover rounded-md mt-auto"
           />
           <h2 className="text-xl font-semibold mb-2 text-sky-300">
             Minha paixão por código
           </h2>
           <p className="text-sm leading-relaxed mb-4">
-            Adoro resolver problemas e construir coisas por meio de código.
-            Programar não é apenas minha profissão, é minha paixão. Gosto de
-            explorar novas tecnologias e aprimorar minhas habilidades.
+           Encontrei na programação uma forma de transformar ideias em algo real e útil.  
+  Gosto de entender como as coisas funcionam, resolver problemas e criar projetos que causem impacto.  
+  Essa paixão me motiva a continuar aprendendo e evoluindo a cada novo desafio.
           </p>
          
         </div>
