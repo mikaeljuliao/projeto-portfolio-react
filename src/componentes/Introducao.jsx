@@ -10,7 +10,7 @@ export default function Introducao () {
             </video>
         </div>
 
-        <div className='w-auto gap-6 sm:w-1/2 mt-12 lg-w-2/3 flex flex-col md:mt-0 md:pl-4'>
+        <div className='w-auto gap-2 md:gap-5 sm:w-1/2 mt-12 lg-w-2/3 flex flex-col md:mt-0 md:pl-4'>
            
          
             <div className=' flex gap-1 px-1 py-2 text-xl border border-sky-800 
@@ -18,7 +18,7 @@ export default function Introducao () {
              text-sky-400 font-semibold'>
             {/* self-start: impede o flex de esticar o elemento e o alinha á esquerda
                 w-fit: faz o elemento ocupar somente o espaço do conteúdo inteiro, sem 100% de largura */}  
-               <i class='bx bxl-sketch '></i>
+               <i className='bx bxl-sketch m-auto'></i>
       Front-end Developer Portifolio
             </div>
          
@@ -36,7 +36,7 @@ export default function Introducao () {
        <button className='flex items-end gap-1 text-xl border border-sky-800 px-2 py-3 mt-5
         rounded-2xl w-fit transition-all duration-300 hover:rounded-md hover:text-sky-400 
         hover:shadow-[0_0_10px_#38bdf8]'>
-        <i class='bx bx-send'></i>Entre em contato comigo</button>
+        <i className='bx bx-send m-auto'></i>Entre em contato comigo</button>
         </div>
 
 
