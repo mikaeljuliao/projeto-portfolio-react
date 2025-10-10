@@ -8,34 +8,23 @@ export default function Contato() {
       <h1 className='text-center text-white font-bold text-4xl py-28'>
         Fale comigo
       </h1>
-      
-      <div className='grid grid-cols-2 w-full h-full'>
-        
-        <div className='flex flex-col w-full h-full items-center justify-center gap-3 text-white'>
-          <a href="https://www.linkedin.com/in/mikael-juliao-dev"  target="_blank">
-            <i class="bx bxl-linkedin-square"></i>
-            https://www.linkedin.com/in/mikael-juliao-dev
-          </a>
 
-          <a href="https://github.com/mikaeljuliao"  target="_blank">
-            <i class='bx bxl-github'></i>
-            https://github.com/mikaeljuliao
-          </a>
+      {/* Grid responsivo */}
+      <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full'>
 
-          <a href="#">
-            <i class="bx bxs-phone-call"></i>
-            859 86066467
-          </a>
-        </div>
-
-        <div className='flex flex-col text-white gap-6'>
-          <div>
-            <p className='text-lg font-semibold text-wrap w-1/2 py-5 tracking-normal'>
-              Precisa de um <span class="gradient">desenvolvedor front-end</span> para seu projeto? 
+        {/* Coluna do formulário */}
+        <div
+          className='flex flex-col items-center justify-center text-white gap-6 
+          md:items-end md:justify-end m-auto w-full order-1 md:order-1'
+        >
+          <div className='w-[90%] md:w-3/4'>
+            <p className='text-lg font-semibold text-wrap py-5 tracking-normal'>
+              Precisa de um <span className="gradient">desenvolvedor front-end</span> para seu projeto? 
               Entre em contato comigo.
             </p>
 
-            <div className="flex flex-col w-1/2 my-4">
+            {/* Campo nome */}
+            <div className="flex flex-col w-full my-4">
               <label
                 htmlFor="nome"
                 className="mb-1 text-sky-400 text-lg font-semibold tracking-wide"
@@ -56,7 +45,8 @@ export default function Contato() {
               />
             </div>
 
-            <div className='flex flex-col w-1/2 my-4'>
+            {/* Campo email */}
+            <div className='flex flex-col w-full my-4'>
               <label
                 htmlFor="email"
                 className="mb-1 text-sky-400 text-lg font-semibold tracking-wide"
@@ -78,10 +68,11 @@ export default function Contato() {
               />
             </div>
 
-            <div className='flex flex-col w-1/2 my-4'>
+            {/* Campo mensagem */}
+            <div className='flex flex-col w-full my-4'>
               <label
                 htmlFor="mensagem"
-                className='"mb-1 text-sky-400 text-lg font-semibold tracking-wide'
+                className="mb-1 text-sky-400 text-lg font-semibold tracking-wide"
               >
                 Sua mensagem
               </label>
@@ -89,7 +80,7 @@ export default function Contato() {
               <input
                 type="text"
                 placeholder='Sua mensagem:'
-                id=""
+                id="mensagem"
                 className='
                   w-full bg-gray-50 text-gray-800
                   border border-sky-600/50 rounded-tr-lg rounded-br-lg
@@ -100,17 +91,42 @@ export default function Contato() {
               />
             </div>
 
+            {/* Botão */}
             <button
               className='
-                flex items-end text-lg shadow-[0_0_5px_#38bdf8]
-                border border-sky-800 px-2 py-1 mt-4 rounded-lg
+                flex items-center justify-center text-lg shadow-[0_0_5px_#38bdf8]
+                border border-sky-800 px-3 py-2 mt-7 rounded-lg
                 transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]
               '
             >
-              <i class="bx bx-send m-auto p-1"></i>
-              Enviar mensagem
+              <i className="bx bx-send mr-2"></i> Enviar mensagem
             </button>
           </div>
+        </div>
+
+        {/* Coluna dos ícones */}
+        <div className='flex flex-col w-full h-full items-center justify-center gap-3
+        mt-5 text-white order-2 md:order-2'>
+          <a href="https://www.linkedin.com/in/mikael-juliao-dev" target="_blank" rel="noreferrer">
+            <i className="bx bxl-linkedin-square text-2xl mr-2 text-sky-400"></i>
+            <span className="hover:text-sky-300 transition-colors duration-300">
+              linkedin.com/in/mikael-juliao-dev
+            </span>
+          </a>
+
+          <a href="https://github.com/mikaeljuliao" target="_blank" rel="noreferrer">
+            <i className='bx bxl-github text-2xl mr-2 text-sky-400'></i>
+            <span className="hover:text-sky-300 transition-colors duration-300">
+              github.com/mikaeljuliao
+            </span>
+          </a>
+
+          <a href="#">
+            <i className="bx bxs-phone-call text-2xl mr-2 text-sky-400"></i>
+            <span className="hover:text-sky-300 transition-colors duration-300">
+              859 86066467
+            </span>
+          </a>
         </div>
       </div>
     </section>
