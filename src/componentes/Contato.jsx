@@ -12,12 +12,12 @@ export default function Contato() {
       <div className='grid grid-cols-2 w-full h-full'>
         
         <div className='flex flex-col w-full h-full items-center justify-center gap-3 text-white'>
-          <a href="https://www.linkedin.com/in/mikael-juliao-dev">
+          <a href="https://www.linkedin.com/in/mikael-juliao-dev"  target="_blank">
             <i class="bx bxl-linkedin-square"></i>
             https://www.linkedin.com/in/mikael-juliao-dev
           </a>
 
-          <a href="https://github.com/mikaeljuliao">
+          <a href="https://github.com/mikaeljuliao"  target="_blank">
             <i class='bx bxl-github'></i>
             https://github.com/mikaeljuliao
           </a>
