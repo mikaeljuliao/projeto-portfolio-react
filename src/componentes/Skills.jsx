@@ -8,7 +8,7 @@ export default function Skills() {
     >
       {/* TÍTULO */}
       <h1 className="text-4xl font-bold text-center py-28">
-        Minhas skills 👌✔
+      Minhas skills💻
       </h1>
 
       {/* CONTAINER PRINCIPAL */}

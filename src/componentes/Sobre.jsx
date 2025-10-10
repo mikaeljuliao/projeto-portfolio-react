@@ -9,7 +9,7 @@ export default function Sobre() {
     >
       {/* Título da seção */}
       <h1 className="text-3xl md:text-4xl font-semibold mt-10 text-center py-11">
-        Olá 👋
+        Olá👋
       </h1>
 
       {/* Grid principal dos cards */}

@@ -6,7 +6,7 @@ export default function Contato() {
       className='flex flex-col items-center justify-center w-full min-h-screen py-20'
     >
       <h1 className='text-center text-white font-bold text-4xl py-28'>
-        Fale comigo
+        Fale comigo🤝
       </h1>
 
       {/* Grid responsivo */}
@@ -18,10 +18,17 @@ export default function Contato() {
           md:items-end md:justify-end m-auto w-full order-1 md:order-1'
         >
           <div className='w-[90%] md:w-3/4'>
-            <p className='text-lg font-semibold text-wrap py-5 tracking-normal'>
-              Precisa de um <span className="gradient">desenvolvedor front-end</span> para seu projeto? 
-              Entre em contato comigo.
-            </p>
+           <p className="text-lg font-semibold text-wrap py-5 tracking-normal">
+  Precisa de um{" "}
+  <span
+    className="relative font-bold bg-gradient-to-r from-blue-900 via-sky-400 to-blue-900 
+    bg-[length:200%_200%] text-transparent bg-clip-text text-2xl
+    animate-gradientFlow"
+  >
+    desenvolvedor front-end
+  </span>{" "}
+  para seu projeto? Entre em contato comigo.
+</p>
 
             {/* Campo nome */}
             <div className="flex flex-col w-full my-4">
