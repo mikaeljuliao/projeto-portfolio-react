@@ -41,7 +41,7 @@ export default function Skills() {
             <h2 className="text-3xl font-semibold mb-4">
               Designer <i className="bx bx-laptop"></i>
             </h2>
-            <p className="text-sm leading-relaxed">
+            <p className="text-base leading-relaxed">
               Atuei por mais de 1 ano e meio como{" "}
               <strong className="border-b-2 border-sky-600">designer gráfico</strong>,
               desenvolvendo identidades visuais, banners e estampas para diferentes públicos e nichos.
@@ -62,7 +62,7 @@ export default function Skills() {
             <h2 className="text-3xl font-semibold mb-4">
               Dev Front <i className="bx bx-code-block"></i>
             </h2>
-            <p className="text-sm leading-relaxed">
+            <p className="text-base leading-relaxed">
               Tenho experiência em{" "}
               <strong className="border-b-2 border-sky-600">HTML5</strong>,{" "}
               <strong className="border-b-2 border-sky-600">CSS3</strong>,{" "}
