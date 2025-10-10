@@ -55,7 +55,9 @@ export default function Navbar() {
       {/* Sidebar mobile */}
       {abrirMenu && (
         <div className="fixed top-0 right-0 w-2/3 h-full 
-        bg-gray-800 text-white flex flex-col p-6 z-50 shadow-[0_0_3px_#38bdf8]">
+bg-gradient-to-br from-[#0a192f] via-[#0f2342] to-[#0a192f]
+text-white flex flex-col p-6 z-50 shadow-[0_0_20px_#38bdf8]/30 
+border-l border-sky-500/20 backdrop-blur-md">
           {/* Botão fechar */}
           <button
             className="self-end text-3xl mb-6"
