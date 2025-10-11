@@ -26,12 +26,12 @@ export default function Projetos() {
             histórico de registros e alerta sonoro para horários. Simulação de API REST com JSON 
             local para exibição dinâmica dos dados.
        
-           Skills:<strong className="gradient-skills">JavaScript (ES6+)</strong>,<strong className="gradient-skills">HTML</strong>, 
-           <strong className="gradient-skills">CSS</strong>,<strong className="gradient-skills"> JSON</strong>,
-           <strong className="gradient-skills"> localStorage</strong>, <strong className="gradient-skills"> Git/GitHub,</strong>
-           <strong className="gradient-skills"> UX/UI</strong>, 
-            <strong className="gradient-skills">Responsividade</strong>,<strong className="gradient-skills"> Acessibilidade</strong>,
-            <strong className="gradient-skills"> Clean Code </strong></p>   
+           Skills:<strong className="gradient-skills">JavaScript (ES6+)</strong>,<strong className="border-b-2 border-sky-600">HTML</strong>, 
+           <strong className="border-b-2 border-sky-600">CSS</strong>,<strong className="border-b-2 border-sky-600"> JSON</strong>,
+           <strong className="border-b-2 border-sky-600"> localStorage</strong>, <strong className="border-b-2 border-sky-600"> Git/GitHub,</strong>
+           <strong className="border-b-2 border-sky-600"> UX/UI</strong>, 
+            <strong className="border-b-2 border-sky-600">Responsividade</strong>,<strong className="border-b-2 border-sky-600"> Acessibilidade</strong>,
+            <strong className="border-b-2 border-sky-600"> Clean Code </strong></p>   
 
             <button className='flex items-end text-lg shadow-[0_0_5px_#38bdf8] border border-sky-800 px-2 py-1 mt-4
         rounded-lg transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]
@@ -60,12 +60,12 @@ export default function Projetos() {
             histórico de registros e alerta sonoro para horários. Simulação de API REST com JSON 
             local para exibição dinâmica dos dados.
        
-           Skills:<strong className="gradient-skills">JavaScript (ES6+)</strong>,<strong className="gradient-skills">HTML</strong>, 
-           <strong className="gradient-skills">CSS</strong>,<strong className="gradient-skills"> JSON</strong>,
-           <strong className="gradient-skills"> localStorage</strong>, <strong className="gradient-skills"> Git/GitHub,</strong>
-           <strong className="gradient-skills"> UX/UI</strong>, 
-            <strong className="gradient-skills">Responsividade</strong>,<strong className="gradient-skills"> Acessibilidade</strong>,
-            <strong className="gradient-skills"> Clean Code </strong></p>   
+           Skills:<strong className="border-b-2 border-sky-600">JavaScript (ES6+)</strong>,<strong className="border-b-2 border-sky-600">HTML</strong>, 
+           <strong className="border-b-2 border-sky-600">CSS</strong>,<strong className="border-b-2 border-sky-600"> JSON</strong>,
+           <strong className="border-b-2 border-sky-600"> localStorage</strong>, <strong className="border-b-2 border-sky-600"> Git/GitHub,</strong>
+           <strong className="border-b-2 border-sky-600"> UX/UI</strong>, 
+            <strong className="border-b-2 border-sky-600">Responsividade</strong>,<strong className="border-b-2 border-sky-600"> Acessibilidade</strong>,
+            <strong className="border-b-2 border-sky-600"> Clean Code </strong></p>   
 
             <button className='flex items-end text-lg shadow-[0_0_5px_#38bdf8] border border-sky-800 px-2 py-1 mt-4
         rounded-lg transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]'>
@@ -95,12 +95,12 @@ export default function Projetos() {
             histórico de registros e alerta sonoro para horários. Simulação de API REST com JSON 
             local para exibição dinâmica dos dados.
        
-           Skills:<strong className="gradient-skills">JavaScript (ES6+)</strong>,<strong className="gradient-skills">HTML</strong>, 
-           <strong className="gradient-skills">CSS</strong>,<strong className="gradient-skills"> JSON</strong>,
-           <strong className="gradient-skills"> localStorage</strong>, <strong className="gradient-skills"> Git/GitHub,</strong>
-           <strong className="gradient-skills"> UX/UI</strong>, 
-            <strong className="gradient-skills">Responsividade</strong>,<strong className="gradient-skills"> Acessibilidade</strong>,
-            <strong className="gradient-skills"> Clean Code </strong></p>   
+           Skills:<strong className="border-b-2 border-sky-600">JavaScript (ES6+)</strong>,<strong className="border-b-2 border-sky-600">HTML</strong>, 
+           <strong className="border-b-2 border-sky-600">CSS</strong>,<strong className="border-b-2 border-sky-600"> JSON</strong>,
+           <strong className="border-b-2 border-sky-600"> localStorage</strong>, <strong className="border-b-2 border-sky-600"> Git/GitHub,</strong>
+           <strong className="border-b-2 border-sky-600"> UX/UI</strong>, 
+            <strong className="border-b-2 border-sky-600">Responsividade</strong>,<strong className="border-b-2 border-sky-600"> Acessibilidade</strong>,
+            <strong className="border-b-2 border-sky-600"> Clean Code </strong></p>   
 
             <button className='flex items-end text-lg shadow-[0_0_5px_#38bdf8] border border-sky-800 px-2 py-1 mt-4
         rounded-lg transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]'>
