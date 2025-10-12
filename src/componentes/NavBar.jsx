@@ -68,16 +68,16 @@ border-l border-sky-500/20 backdrop-blur-md">
 
           {/* Links mobile */}
           <ul className="flex flex-col gap-6 text-lg">
-            <li><a href="#sobre" className="px-2 py-1 border border-transparent transition-all 
+            <li><a href="#sobre" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
         duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]"
          onClick={() => setAbrirMenu(false)}>Sobre</a></li>
-            <li><a href="#projeto" className="px-2 py-1 border border-transparent transition-all 
+            <li><a href="#projeto" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
         duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]" 
         onClick={() => setAbrirMenu(false)}>Projetos</a></li>
-            <li><a href="#skills" className="px-2 py-1 border border-transparent transition-all 
+            <li><a href="#skills" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
         duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]"
          onClick={() => setAbrirMenu(false)}>Skills</a></li>
-            <li><a href="#contato" className="px-2 py-1 border border-transparent transition-all 
+            <li><a href="#contato" className="px-2 py-1 border-b-[3px] border-sky-400 transition-all 
         duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]"
          onClick={() => setAbrirMenu(false)}>Contato</a></li>
           </ul>
