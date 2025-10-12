@@ -4,23 +4,31 @@ import Carrosel from './Carrosel'
 export default function Projetos() {
     const projeto1 = [
   
-  "/imagem/imagem-lembremed.png",
-  "/imagem/2.png"
-];
-
-const projeto2 = [
-  "/imagem/lembreMed-descktop2.png",
+ "/imagem/lembreMed-descktop2.png",
   "/imagem/lembreMed-descktop3.png",
   "/imagem/lembreMed-descktop4.png",
   "/imagem/lembreMed-mobile1.png",
   "/imagem/lembreMed-mobile2.png",
   "/imagem/lembreMed-mobile3.png"
+
+];
+
+const projeto2 = [
+
+  "/imagem/portfolio-descktop0.png",
+  "/imagem/portfolio-descktop2.png",
+  "/imagem/portfolio-descktop3.png",
+  "/imagem/portfolio-descktop4.png",
+  "/imagem/portfolio-descktop5.png",
+  "/imagem/portfolio-descktop6.png",
+  "/imagem/portfolio-descktop7.png",
 ];
 
 const projeto3 = [
-  "/imagem/7.png",
-  "/imagem/8.png",
-  "/imagem/logo git.png"
+  "/imagem/controleDeGasto-descktop1.png",
+  "/imagem/controleDeGasto-descktop2.png",
+  "/imagem/controleDeGasto-mobile1.png",
+   "/imagem/controleDeGasto-mobile1.png"
 ];
 
   return (
@@ -32,10 +40,10 @@ const projeto3 = [
       {/* Card 1 */}      
     <div >
      
-
-        <div className="border-2 border-sky-400 rounded-xl overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
-  <Carrosel images={projeto2} />
+<div className="border-2 border-sky-400 rounded-xl overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+  <Carrosel images={projeto1} />
 </div>
+
 
        
         <div className="projeto-inf fadeInRight">
@@ -64,12 +72,10 @@ const projeto3 = [
     
       {/* Card 2 */}    
     <div className="">
-     <div className="border-2 border-sky-400 rounded-xl 
-     overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
-     <Carrosel images={projeto2} />
-    </div>
+  <div className="border-2 border-sky-400 rounded-xl overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+  <Carrosel images={projeto2} />
+</div>
 
-       
         <div className="projeto-inf fadeInRight">
           
             <h1 className='font-bold text-xl mt-6 mb-3'><span className=" bg-gradient-to-r from-sky-400
@@ -100,7 +106,7 @@ const projeto3 = [
     <div className="">
       <div className="border-2 border-sky-400 rounded-xl overflow-hidden 
       shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
-     <Carrosel images={projeto1} />
+     <Carrosel images={projeto3} />
     </div>
 
        
