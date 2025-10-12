@@ -1,6 +1,28 @@
 import React from 'react'
+import Carrosel from './Carrosel'
 
 export default function Projetos() {
+    const projeto1 = [
+  
+  "/imagem/imagem-lembremed.png",
+  "/imagem/2.png"
+];
+
+const projeto2 = [
+  "/imagem/lembreMed-descktop2.png",
+  "/imagem/lembreMed-descktop3.png",
+  "/imagem/lembreMed-descktop4.png",
+  "/imagem/lembreMed-mobile1.png",
+  "/imagem/lembreMed-mobile2.png",
+  "/imagem/lembreMed-mobile3.png"
+];
+
+const projeto3 = [
+  "/imagem/7.png",
+  "/imagem/8.png",
+  "/imagem/logo git.png"
+];
+
   return (
     <section className='text-white w-full min-h-screen flex flex-col items-center justify-center py-28'>
          <h1 className="text-white font-bold text-4xl py-40">Meus projetos👨‍💻</h1>
@@ -9,19 +31,18 @@ export default function Projetos() {
             
       {/* Card 1 */}      
     <div >
-       <div className=" border-2 border-sky-400 rounded-xl 
-       overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]
-        ">
-            <video  id="projetoVideo1" src="video/site-medicamentos.mp4"></video>
-    
-            <div className="hover-sign"></div>
-        </div>
+     
+
+        <div className="border-2 border-sky-400 rounded-xl overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+  <Carrosel images={projeto2} />
+</div>
+
        
         <div className="projeto-inf fadeInRight">
           
             <h1 className='font-bold text-xl mt-6 mb-3 
             '> <span className=" bg-gradient-to-r from-sky-400 via-blue-500 to-purple-600 
-            bg-clip-text text-transparent animate-gradient-x duration-300 ease-in-out  ">Gerenciador</span>  de Medicamentos</h1>
+            bg-clip-text text-transparent animate-gradient-x duration-300 ease-in-out">Gerenciador</span>  de Medicamentos</h1>
             <p className='font-semibold '>Aplicação freelancer real para controle de medicamentos, com CRUD completo, 
             histórico de registros e alerta sonoro para horários. Simulação de API REST com JSON 
             local para exibição dinâmica dos dados.
@@ -43,12 +64,11 @@ export default function Projetos() {
     
       {/* Card 2 */}    
     <div className="">
-       <div className="border-2 border-sky-400 rounded-lg overflow-hidden
-       shadow-[0_0_10px_#38bdf8]  hover:shadow-[0_0_20px_#1e40ff]">
-            <video  id="projetoVideo1" src="video/portifolio-pessoal.mp4"></video>
-    
-            <div className="hover-sign"></div>
-        </div>
+     <div className="border-2 border-sky-400 rounded-xl 
+     overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+     <Carrosel images={projeto2} />
+    </div>
+
        
         <div className="projeto-inf fadeInRight">
           
@@ -78,13 +98,11 @@ export default function Projetos() {
 
      {/* Card 3 */}      
     <div className="">
-       <div className="border-2 border-sky-400 rounded-lg overflow-hidden shadow-[0_0_10px_#38bdf8]
-      hover:shadow-[0_0_20px_#1e40ff]
-        ">
-            <video  id="projetoVideo1" src="video/controle-de-gasto.mp4"></video>
-    
-            <div className="hover-sign"></div>
-        </div>
+      <div className="border-2 border-sky-400 rounded-xl overflow-hidden 
+      shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+     <Carrosel images={projeto1} />
+    </div>
+
        
         <div className="projeto-inf fadeInRight">
           
