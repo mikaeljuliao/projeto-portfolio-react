@@ -23,14 +23,16 @@ export default function Carrosel({ images }) {
       {/* Botões */}
       <button
         onClick={prevImage}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-sky-800 bg-opacity-60 hover:bg-opacity-80 text-white px-2 py-1 rounded-full"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-sky-800 bg-opacity-60 hover:bg-opacity-80
+         text-white px-2 py-1 rounded-full"
       >
         ←
       </button>
 
       <button
         onClick={nextImage}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-sky-800 bg-opacity-60 hover:bg-opacity-80 text-white px-2 py-1 rounded-full"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-sky-800 bg-opacity-60 
+        hover:bg-opacity-80 text-white px-2 py-1 rounded-full"
       >
         →
       </button>
