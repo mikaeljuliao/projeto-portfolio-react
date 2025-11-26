@@ -38,7 +38,7 @@ export default function Introducao () {
       </div>
 
       {/* --- FOTO --- */}
-      <div className='w-full md:w-1/2 flex justify-center md:justify-center  md:mb-8'>
+      <div className='w-full md:w-1/2 flex justify-center md:justify-center m-auto md:m-0  md:mb-8'>
         <img 
           src="/imagem/minha-image.png" 
           alt="Minha foto"
