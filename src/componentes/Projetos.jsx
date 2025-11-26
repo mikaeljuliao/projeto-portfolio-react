@@ -32,7 +32,7 @@ const projeto3 = [
 ];
 
   return (
-    <section className='text-white w-full min-h-screen flex flex-col items-center justify-center py-28'>
+    <section id='projeto' className='text-white w-full min-h-screen flex flex-col items-center justify-center py-28'>
          <h1 className="text-white font-bold text-4xl py-40">Meus projetos👨‍💻</h1>
 
          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 w-[85%] h-full '>

@@ -51,7 +51,7 @@ export default function Contato() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center w-full min-h-screen py-20">
+    <section id="contato" className="flex flex-col items-center justify-center w-full min-h-screen py-20">
       <h1 className="text-center text-white font-bold text-4xl py-28">
         Fale comigo 🤝
       </h1>
