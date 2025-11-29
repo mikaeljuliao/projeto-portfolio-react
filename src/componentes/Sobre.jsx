@@ -5,7 +5,7 @@ export default function Sobre() {
     <section
       id="sobre"
       className="min-h-screen w-full flex flex-col items-center justify-center 
-      px-6 md:px-16 text-white relative py-6"
+      px-6 md:px-16 text-white relative py-40 md:py-12"
     >
       {/* Título da seção */}
       <h1 className="text-3xl md:text-4xl font-semibold mt-10 text-center py-11">
@@ -125,7 +125,7 @@ export default function Sobre() {
           className="relative flex flex-col items-start bg-slate-900/40 
           border border-sky-400/30 backdrop-blur-md rounded-xl
           overflow-hidden p-4 hover:shadow-[0_0_15px_#38bdf8]
-          transition-all duration-300 sm:col-span-2"
+          transition-all duration-300 lg:col-span-2"
         >
            <img
             src="imagem/grid4.png"
