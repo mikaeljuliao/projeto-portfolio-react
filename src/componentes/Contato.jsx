@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from 'emailjs-com'
 
 export default function Contato() {
   // 🧩 Estados para guardar o que o usuário digita
@@ -121,7 +122,8 @@ export default function Contato() {
 
               {/* Configurações do FormSubmit */}
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="http://localhost:5173/obrigado" />
+              <input type="hidden" name="_next" value="https://SEU-SITE.netlify.app/obrigado" />
+
 
 
               
