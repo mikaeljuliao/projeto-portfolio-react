@@ -71,7 +71,7 @@ export default function Contato() {
 
             <form
               onSubmit={enviarFormulario}
-              action="https://formsubmit.co/d535fca56c14892152da6bcc8dd9f22b"
+              action="https://formsubmit.co/mikaeljuliao56@gmail.com"
               method="POST"
               className="flex flex-col w-full"
             >
@@ -81,6 +81,7 @@ export default function Contato() {
               </label>
               <input
                 type="text"
+                name="nome"
                 value={nome}
                 onChange={(e) => setNome(e.target.value)}
                 placeholder="Digite seu nome"
@@ -94,6 +95,7 @@ export default function Contato() {
               </label>
               <input
                 type="email"
+                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="E-mail"
@@ -106,6 +108,7 @@ export default function Contato() {
                 Sua mensagem:
               </label>
               <textarea
+              name="mensagem"
                 value={mensagem}
                 onChange={(e) => setMensagem(e.target.value)}
                 placeholder="Digite sua mensagem..."
@@ -118,11 +121,10 @@ export default function Contato() {
 
               {/* Configurações do FormSubmit */}
               <input type="hidden" name="_captcha" value="false" />
-              <input
-                type="hidden"
-                name="_next"
-                value="http://127.0.0.1:5501/obrigado.html"
-              />
+              <input type="hidden" name="_next" value="http://localhost:5173/obrigado" />
+
+
+              
 
               {/* Botão de envio */}
               <button
