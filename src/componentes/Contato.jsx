@@ -122,7 +122,8 @@ export default function Contato() {
 
               {/* Configurações do FormSubmit */}
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://SEU-SITE.netlify.app/obrigado" />
+              <input type="hidden" name="_next" value="https://portfolio-mikael-juliao-dev.netlify.app/obrigado" />
+
 
 
 
