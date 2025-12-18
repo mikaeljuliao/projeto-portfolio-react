@@ -4,8 +4,9 @@ export default function Navbar() {
   const [abrirMenu, setAbrirMenu] = useState(false) // estado para controlar o menu
 
   return (
-    <nav className="fixed w-full flex items-center mix-blend-lighten justify-between px-6 py-4 bg-gray-800
-     text-white z-40 shadow-[0_0_3px_#38bdf8] ">
+    <nav className="fixed w-full flex items-center  justify-between px-6 py-4 bg-gray-800
+     text-white z-40 shadow-[0_0_3px_#38bdf8] mix-blend-screen md:backdrop-blur-md
+ ">
       {/* Logo */}
       <h1 className="text-2xl font-bold">
         <span className="text-sky-300">Mikael</span> da Rocha
@@ -55,9 +56,9 @@ export default function Navbar() {
       {/* Sidebar mobile */}
       {abrirMenu && (
         <div className="fixed top-0 right-0 w-2/3 h-full 
-bg-gradient-to-br from-[#0a192f] via-[#0f2342] to-[#0a192f]
+bg-gradient-to-br from-[#000000] via-[#022354] to-[#0a192f]
 text-white flex flex-col p-6 z-50 shadow-[0_0_20px_#38bdf8]/30 
-border-l border-sky-500/20 backdrop-blur-md">
+border-l border-sky-500/20  mix-blend-screen  ">
           {/* Botão fechar */}
           <button
             className="self-end text-3xl mb-6"
