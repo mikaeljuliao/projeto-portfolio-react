@@ -11,34 +11,52 @@ export default function Introducao () {
         <div className='flex gap-1 px-3 py-2 text-xl border border-sky-800 
           rounded-3xl self-start w-fit text-sky-400 font-semibold'>
           <i className='bx bxl-sketch m-auto'></i>
-          Front-end Developer Portifolio
+          Front-end Developer Portfolio
         </div>
 
         <h1 className='text-3xl md:text-6xl font-bold leading-tight'>
-          Fornecendo{' '}
+          Desenvolvendo interfaces{' '}
           <span className='bg-gradient-to-r from-sky-400 via-blue-500 to-purple-600 
             bg-clip-text text-transparent animate-gradient-x bg-[length:200%_200%]'>
-            a melhor experiência
+            modernas e funcionais
           </span>{' '}
-          de projeto
+          com foco no usuário
         </h1>
 
         <p className='font-normal text-lg md:text-xl text-gray-200'>
-          Sou desenvolvedor front-end com experiência na criação de sites responsivos 
-          e interfaces modernas. Confira minhas habilidades.
+          Sou desenvolvedor front-end especializado em criar aplicações web responsivas,
+          bem estruturadas e com excelente experiência do usuário utilizando React e
+          tecnologias modernas.
         </p>
 
-        <button className='flex items-center gap-1 text-xl border border-sky-800 px-4 py-3
-          rounded-2xl w-fit transition-all duration-300 hover:rounded-md hover:text-sky-400 
-          hover:shadow-[0_0_10px_#38bdf8]'>
-          <i className='bx bx-send'></i>
-          Entre em contato comigo
-        </button>
+        {/* --- BOTÕES --- */}
+        <div className='flex gap-4 flex-wrap'>
+          <button className='flex items-center gap-1 text-xl border border-sky-800 px-4 py-3
+            rounded-2xl w-fit transition-all duration-300 hover:rounded-md hover:text-sky-400 
+            hover:shadow-[0_0_10px_#38bdf8]'>
+            <i className='bx bx-code-alt'></i>
+            Ver projetos
+          </button>
+         <a
+         href="/curriculo/Currículo-Mikael-Julião-Rocha.pdf"
+        download
+        className="flex items-center gap-1 text-xl border border-sky-800 px-4 py-3
+        rounded-2xl w-fit transition-all duration-300 hover:rounded-md hover:text-sky-400 
+        hover:shadow-[0_0_10px_#38bdf8]"
+         >
+        <i className="bx bx-download"></i>
+        Baixar currículo
+         </a>
+
+
+
+
+        </div>
 
       </div>
 
       {/* --- FOTO --- */}
-      <div className='w-full md:w-1/2 flex justify-center md:justify-center m-auto md:m-0  md:mb-8'>
+      <div className='w-full md:w-1/2 flex justify-center md:justify-center m-auto md:m-0 md:mb-8'>
         <img 
           src="/imagem/minha-image.png" 
           alt="Minha foto"

@@ -474,3 +474,67 @@ Na próxima vez que precisar validar qualquer formulário, é só olhar
 essas anotações e adaptar as condições conforme o caso.
 
 -->
+
+
+
+
+
+
+
+
+<!--
+Anotação de 23/01/2026
+-->
+
+<!--
+========================================
+📄 IMPLEMENTAÇÃO DE CURRÍCULO PARA DOWNLOAD
+========================================
+
+🧠 OBJETIVO:
+Permitir que o visitante do portfólio baixe meu currículo em PDF
+de forma simples, direta e profissional.
+
+📁 ESTRUTURA CORRETA:
+O arquivo do currículo deve ficar dentro da pasta "public",
+pois tudo que está em "public" é servido diretamente pelo navegador.
+
+Exemplo:
+public/
+ └── curriculo/
+     └── Currículo-Mikael-Julião-Rocha.pdf
+
+⚠️ IMPORTANTE:
+- O PDF precisa estar válido (com conteúdo).
+- Se o PDF estiver vazio ou corrompido, o download funciona,
+  mas o arquivo não abre corretamente.
+- Sempre testar abrindo o PDF direto pelo navegador.
+
+🔗 COMO FUNCIONA O LINK:
+Usamos a tag <a> com o atributo "download".
+Isso faz o navegador baixar o arquivo em vez de apenas abrir.
+
+Exemplo em React:
+<a
+  href="/curriculo/Currículo-Mikael-Julião-Rocha.pdf"
+  download
+>
+  Baixar currículo
+</a>
+
+📌 OBSERVAÇÕES IMPORTANTES:
+- O caminho começa com "/" porque aponta para a pasta public.
+- O nome do arquivo precisa ser exatamente igual (maiúsculas,
+  minúsculas e acentos contam).
+- Evitar renomear PDFs manualmente dentro do VS Code se o arquivo
+  estiver corrompido; prefira gerar novamente o PDF.
+
+🧪 TESTES REALIZADOS:
+✔ Arquivo abre direto no navegador
+✔ Download funciona
+✔ PDF abre com conteúdo correto
+
+🚀 APRENDIZADO:
+Arquivos estáticos (PDF, imagens, vídeos) devem ficar em "public"
+para acesso direto via URL em projetos React com Vite.
+-->
