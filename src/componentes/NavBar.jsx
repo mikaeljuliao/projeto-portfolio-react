@@ -32,18 +32,24 @@ export default function Navbar() {
         >Contato</a></li>
       </ul>
 
-       <div className="hidden md:flex gap-4 text-2xl">
-            <a href="https://github.com/mikaeljuliao" target="_blank" rel="noreferrer" 
-            className="hover:px-2 hover:py-1 border border-transparent transition-all 
-        duration-300 hover:border-sky-400 hover:rounded-full hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]">
-              <i className="bx bxl-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mikael-juliao-dev" target="_blank" rel="noreferrer"
-            className="hover:px-2 hover:py-1 transition-all border border-transparent
-            duration-300 hover:border-sky-400 hover:text-sky-400 hover:rounded-full hover:shadow-[0_0_10px_#38bdf8">
-              <i className="bx bxl-linkedin-square"></i>
-            </a>
-          </div>
+ <div className="hidden md:flex pr-6">
+  <a
+    href="#contato"
+    className="relative flex items-center gap-3 px-5 py-2
+    border border-sky-500/30 rounded-2xl
+    bg-sky-500/10 backdrop-blur-md
+    text-sky-300 font-medium
+    transition-all duration-300
+    hover:bg-sky-500/20 hover:border-sky-400 hover:text-sky-200"
+  >
+    {/* Ícone com movimento */}
+    <i className="bx bx-right-arrow-alt text-xl text-sky-400 animate-bounce"></i>
+
+    <span>Fale comigo</span>
+  </a>
+</div>
+
+
 
       {/* Botão menu mobile */}
       <button
@@ -56,9 +62,9 @@ export default function Navbar() {
       {/* Sidebar mobile */}
       {abrirMenu && (
         <div className="fixed top-0 right-0 w-2/3 h-full 
-bg-gradient-to-br from-[#000000] via-[#022354] to-[#0a192f]
-text-white flex flex-col p-6 z-50 shadow-[0_0_20px_#38bdf8]/30 
-border-l border-sky-500/20  mix-blend-screen  ">
+bg-[#000000]  text-white flex flex-col p-6 z-50 shadow-[0_0_20px_#38bdf8]/30 
+border-l border-[#0a0f1c]
+ ">
           {/* Botão fechar */}
           <button
             className="self-end text-3xl mb-6"
@@ -83,18 +89,21 @@ border-l border-sky-500/20  mix-blend-screen  ">
          onClick={() => setAbrirMenu(false)}>Contato</a></li>
           </ul>
 
-          {/* Redes sociais */}
+          {/* BOTÃO FALE COMIGO (substitui redes sociais) */}
           <div className="flex gap-4 mt-8 text-2xl">
-            <a href="https://github.com/mikaeljuliao" target="_blank" rel="noreferrer"
-            className="hover:px-2 hover:py-1 border border-transparent transition-all
-            duration-300 hover:border-sky-400 hover:text-sky-400 hover:rounded-full hover:shadow-[0_0_10px_#38bdf8]">
-              <i className="bx bxl-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mikael-juliao-dev" target="_blank" rel="noreferrer"
-            className="hover:px-2 hover:py-1 border border-transparent transition-all 
-            duration-300 hover:border-sky-400 hover:text-sky-400 hover:rounded-full hover:shadow-[0_0_10px_#38bdf8]">
-              <i className="bx bxl-linkedin-square"></i>
-            </a>
+    <a
+      href="#contato"
+      onClick={() => setAbrirMenu(false)}
+      className="mt-10 flex items-center justify-center gap-2
+      w-full px-4 py-3 rounded-xl
+      border border-sky-400/40
+     bg-[#020a13] text-sky-300 font-medium 
+      transition-all duration-300
+      hover:bg-sky-500/20 hover:text-sky-200 hover:shadow-[0_0_12px_#38bdf8]"
+    >
+      <i className="bx bx-right-arrow-alt text-xl"></i>
+      Fale comigo
+    </a>
           </div>
         </div>
       )}
