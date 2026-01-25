@@ -1,163 +1,231 @@
 import React, { useState } from "react";
 
+/* =========================
+   Funções de validação
+========================= */
+const validarNome = (nome) => {
+  if (!nome.trim()) return "Digite seu nome.";
+  if (nome.trim().length < 3)
+    return "O nome deve ter pelo menos 3 caracteres.";
+  return "";
+};
+
+const validarEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email.trim()) return "Digite seu email.";
+  if (!emailRegex.test(email)) return "Digite um email válido.";
+  return "";
+};
+
+const validarMensagem = (mensagem) => {
+  if (!mensagem.trim()) return "Digite sua mensagem.";
+  if (mensagem.trim().length < 10)
+    return "A mensagem deve ter pelo menos 10 caracteres.";
+  return "";
+};
+
 export default function Contato() {
-  // 🧩 Estados dos campos
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [mensagem, setMensagem] = useState("");
 
-  // ⚠️ Estados de erro
   const [erroNome, setErroNome] = useState("");
   const [erroEmail, setErroEmail] = useState("");
   const [erroMensagem, setErroMensagem] = useState("");
 
-  // 🧠 Envio para WhatsApp
-  const enviarFormulario = (evento) => {
-    evento.preventDefault();
+  const enviarFormulario = (e) => {
+    e.preventDefault();
 
-    // limpa erros
-    setErroNome("");
-    setErroEmail("");
-    setErroMensagem("");
+    const erroNomeValidado = validarNome(nome);
+    const erroEmailValidado = validarEmail(email);
+    const erroMensagemValidada = validarMensagem(mensagem);
 
-    let temErro = false;
+    setErroNome(erroNomeValidado);
+    setErroEmail(erroEmailValidado);
+    setErroMensagem(erroMensagemValidada);
 
-    if (nome.trim() === "") {
-      setErroNome("Por favor, digite seu nome.");
-      temErro = true;
-    }
+    if (erroNomeValidado || erroEmailValidado || erroMensagemValidada) return;
 
-    if (email.trim() === "") {
-      setErroEmail("Por favor, digite seu email.");
-      temErro = true;
-    } else if (!email.includes("@") || !email.includes(".")) {
-      setErroEmail("Digite um email válido.");
-      temErro = true;
-    }
-
-    if (mensagem.trim() === "") {
-      setErroMensagem("Por favor, digite sua mensagem.");
-      temErro = true;
-    }
-
-    if (temErro) return;
-
-    // 📱 Mensagem enviada ao WhatsApp
     const texto = `
 Olá! Me chamo ${nome}.
-Meu email é ${email}.
+Email: ${email}
 
 Mensagem:
 ${mensagem}
     `;
 
-    const telefone = "5585986066467"; // DDI + DDD + número
+    const telefone = "5585986066467";
     const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
 
     window.open(url, "_blank");
   };
 
+  const formularioInvalido =
+    erroNome || erroEmail || erroMensagem || !nome || !email || !mensagem;
+
   return (
-    <section
-      id="contato"
-      className="flex flex-col items-center justify-center w-full min-h-screen py-20"
-    >
-      <h1 className="text-center text-white font-bold text-4xl py-28">
-        Fale comigo 🤝
-      </h1>
+    <section id="contato" className="w-full py-32 px-6">
+      {/* Título */}
+      <div className="text-center max-w-3xl mx-auto mb-20">
+        <h2 className="text-4xl font-bold text-white mb-4">
+          Vamos conversar?
+        </h2>
+        <p className="text-gray-400">
+          Interessado em trabalhar juntos? Entre em contato e vamos discutir seu
+          projeto.
+        </p>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full h-full">
-        {/* 🧾 FORMULÁRIO */}
-        <div className="flex flex-col items-center justify-center text-white gap-6 m-auto w-full">
-          <div className="w-[90%] md:w-3/4">
-            <p className="text-lg font-semibold py-5">
-              Precisa de um{" "}
-              <span className="font-bold text-sky-400 text-2xl">
-                desenvolvedor front-end
-              </span>{" "}
-              para seu projeto? Vamos conversar no WhatsApp.
-            </p>
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* Formulário */}
+        <div className="bg-slate-900/40 border border-white/10 rounded-2xl p-8 shadow-lg">
+          <h3 className="text-xl font-semibold text-white mb-6">
+            Envie uma mensagem
+          </h3>
 
-            <form onSubmit={enviarFormulario} className="flex flex-col w-full">
-              {/* Nome */}
-              <label className="text-sky-400 text-lg font-semibold">
-                Nome completo:
-              </label>
+          <form onSubmit={enviarFormulario} className="flex flex-col gap-5">
+            {/* Nome */}
+            <div>
+              <label className="text-sm text-gray-300">Nome completo</label>
               <input
                 type="text"
                 value={nome}
-                onChange={(e) => setNome(e.target.value)}
-                placeholder="Digite seu nome"
-                className="border-2 border-sky-400 rounded-lg py-2 px-3 text-gray-800 outline-none"
+                onChange={(e) => {
+                  setNome(e.target.value);
+                  setErroNome(validarNome(e.target.value));
+                }}
+                placeholder="Seu nome"
+                className="w-full mt-2 bg-transparent border border-white/10 rounded-lg px-4 py-3 text-white outline-none focus:border-sky-500"
               />
               {erroNome && (
                 <p className="text-red-400 text-sm mt-1">{erroNome}</p>
               )}
+            </div>
 
-              {/* Email */}
-              <label className="mt-4 text-sky-400 text-lg font-semibold">
-                Seu email:
-              </label>
+            {/* Email */}
+            <div>
+              <label className="text-sm text-gray-300">Email</label>
               <input
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="email@exemplo.com"
-                className="border-2 border-sky-400 rounded-lg py-2 px-3 text-gray-800 outline-none"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setErroEmail(validarEmail(e.target.value));
+                }}
+                placeholder="seu@email.com"
+                className="w-full mt-2 bg-transparent border border-white/10 rounded-lg px-4 py-3 text-white outline-none focus:border-sky-500"
               />
               {erroEmail && (
                 <p className="text-red-400 text-sm mt-1">{erroEmail}</p>
               )}
+            </div>
 
-              {/* Mensagem */}
-              <label className="mt-4 text-sky-400 text-lg font-semibold">
-                Sua mensagem:
-              </label>
+            {/* Mensagem */}
+            <div>
+              <label className="text-sm text-gray-300">Mensagem</label>
               <textarea
                 value={mensagem}
-                onChange={(e) => setMensagem(e.target.value)}
-                placeholder="Descreva sua ideia ou projeto..."
-                className="border-2 border-sky-400 rounded-lg py-2 px-3 text-gray-800 h-28 resize-none outline-none"
+                onChange={(e) => {
+                  setMensagem(e.target.value);
+                  setErroMensagem(validarMensagem(e.target.value));
+                }}
+                placeholder="Conte-me sobre seu projeto ou oportunidade..."
+                className="w-full mt-2 bg-transparent border border-white/10 rounded-lg px-4 py-3 text-white h-32 resize-none outline-none focus:border-sky-500"
               />
               {erroMensagem && (
                 <p className="text-red-400 text-sm mt-1">{erroMensagem}</p>
               )}
+            </div>
 
-              {/* Botão */}
-              <button
-                type="submit"
-                className="text-lg mt-6 border border-sky-800 px-4 py-3 rounded-lg
-                hover:text-sky-400 transition-all duration-300
-                hover:shadow-[0_0_10px_#38bdf8]"
-              >
-                Falar comigo no WhatsApp 💬
-              </button>
-            </form>
-          </div>
+            {/* Botão */}
+            <button
+              type="submit"
+              disabled={formularioInvalido}
+              className={`mt-4 py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2
+                ${
+                  formularioInvalido
+                    ? "bg-gray-500 cursor-not-allowed"
+                    : "bg-sky-500 hover:bg-sky-600"
+                } text-white`}
+            >
+              Enviar mensagem
+              <i className="bx bxl-whatsapp text-2xl text-green-400"></i>
+            </button>
+          </form>
         </div>
 
-        {/* 📱 LINKS */}
-        <div className="flex flex-col items-center justify-center gap-4 mt-8 text-white">
-          <a
-            href="https://www.linkedin.com/in/mikael-juliao-dev"
-            target="_blank"
-          >
-            <i className="bx bxl-linkedin-square text-2xl text-sky-400 mr-2"></i>
-            linkedin.com/in/mikael-juliao-dev
-          </a>
+         {/* Informações */}
+        <div className="flex flex-col gap-6">
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-2">
+              Informações de contato
+            </h3>
+            <p className="text-gray-400">
+              Estou disponível para trabalhos freelancer, estágio, PJ ou
+              oportunidades CLT. Vamos criar algo incrível juntos?
+            </p>
+          </div>
 
-          <a href="https://github.com/mikaeljuliao" target="_blank">
-            <i className="bx bxl-github text-2xl text-sky-400 mr-2"></i>
-            github.com/mikaeljuliao
-          </a>
+           {/* Telefone */} 
+         <div className="bg-slate-900/40 border border-white/10 rounded-xl p-6 flex items-center gap-4">
+        <div className="w-10 h-10 flex items-center justify-center bg-sky-500/20 text-sky-400 rounded-lg">
+        <i className="bx bx-phone text-xl"></i>
+        </div>
+        <div className="flex flex-col">
+        <p className="text-gray-400 text-sm">Telefone</p>
+        <p className="text-white font-medium">(85) 98606-6467</p>
+        </div>
+        </div>
 
-          <a
-            href="https://wa.me/5585986066467"
-            target="_blank"
-          >
-            <i className="bx bxl-whatsapp text-2xl text-sky-400 mr-2"></i>
-            (85) 98606-6467
-          </a>
+           {/* Email */} 
+          <div className="bg-slate-900/40  border border-white/10 rounded-xl p-6 flex items-center gap-3">
+          <div className="w-10 h-10 flex items-center justify-center bg-sky-500/20 text-sky-400 rounded-lg">
+         <i className="bx bx-envelope text-xl"></i>
+          </div>
+          <div  className="flex flex-col">
+            <p className="text-gray-400 text-sm">Email</p>
+            <p className="text-white font-medium">
+              mikaeljuliao56@gmail.com
+            </p>
+          </div>
+          </div>
+
+          {/* linkedin */}  
+          <div className="bg-slate-900/40  border border-white/10 rounded-xl p-6 flex items-center gap-3">
+          <div className="w-10 h-10 flex items-center justify-center bg-sky-500/20 text-sky-400 rounded-lg">
+        <i className="bx bxl-linkedin-square text-xl"></i>
+          </div>
+          <div  className="flex flex-col">
+            <p className="text-gray-400 text-sm">linkedin</p>
+            <p className="text-white font-medium">
+              mikaeljuliao56@gmail.com
+            </p>
+          </div>
+          </div>
+            
+           {/* github */}  
+          <div className="bg-slate-900/40  border border-white/10 rounded-xl p-6 flex items-center gap-3">
+          <div className="w-10 h-10 flex items-center justify-center bg-sky-500/20 text-sky-400 rounded-lg">
+         <i className="bx bxl-github text-xl"></i>
+          </div>
+          <div  className="flex flex-col">
+            <p className="text-gray-400 text-sm">github</p>
+            <p className="text-white font-medium">
+              mikaeljuliao56@gmail.com
+            </p>
+          </div>
+          </div>
+
+
+          {/* Status */}
+          <div className="bg-slate-900/40 border border-sky-500/30 rounded-xl p-6">
+            <p className="text-sky-400 font-medium">
+              ● Disponível para contratação
+            </p>
+            <p className="text-gray-400 text-sm mt-2">
+              Atualmente buscando oportunidades em Front-end.
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -789,3 +789,270 @@ Formulário → mensagem → WhatsApp
 
 =========================================================
 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+🟢 BOLINHA PULSANTE (STATUS)
+
+OBJETIVO:
+Criar uma bolinha com efeito pulsante usando apenas
+HTML + Tailwind CSS, sem JavaScript.
+
+COMO É FEITO:
+O efeito usa DOIS círculos no MESMO LUGAR:
+• um fixo (visível sempre)
+• um animado (pulso)
+
+PASSO A PASSO:
+
+1️⃣ Container com position: relative
+<div class="relative flex items-center justify-center">
+
+→ O relative é ESSENCIAL.
+Ele define o ponto de referência para o círculo animado.
+Sem isso, o absolute se posicionaria em outro lugar da tela.
+
+2️⃣ Círculo animado (pulso)
+<span class="absolute inline-flex h-3 w-3
+  rounded-full bg-sky-400 opacity-75 animate-ping"></span>
+
+→ absolute faz o círculo ficar exatamente em cima do outro  
+→ animate-ping cria a animação de expansão  
+→ opacity deixa o pulso mais suave e visualmente elegante  
+
+3️⃣ Círculo fixo (base)
+<span class="relative inline-flex h-3 w-3
+  rounded-full bg-sky-400"></span>
+
+→ Esse círculo garante que sempre exista uma bolinha visível,
+mesmo quando o pulso estiver desaparecendo.
+
+RESULTADO:
+O círculo de trás cresce e some,
+o da frente permanece fixo → efeito pulsante.
+
+AJUSTES RÁPIDOS:
+• Cor: bg-green-400 | bg-red-500
+• Tamanho: h-2 w-2 | h-4 w-4
+• Intensidade do pulso: opacity-50 / opacity-100
+• Sem animação: remover animate-ping
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+data: 24/01/2026
+-->
+
+<!--
+====================================================================
+APRENDIZADO: COMO FAZER VALIDAÇÃO DE FORMULÁRIO EM REACT (NA PRÁTICA)
+====================================================================
+
+Este aprendizado mostra COMO EU IMPLEMENTO uma validação de formulário
+usando React, com código real, simples de entender e fácil de reutilizar
+em qualquer outro projeto.
+
+--------------------------------------------------------------------
+1️⃣ CRIANDO O ESTADO DOS CAMPOS
+--------------------------------------------------------------------
+
+Primeiro, criamos estados para armazenar os valores digitados
+pelo usuário em cada campo do formulário.
+
+Exemplo real:
+
+const [nome, setNome] = useState("");
+const [email, setEmail] = useState("");
+const [mensagem, setMensagem] = useState("");
+
+Esses estados guardam os valores enquanto o usuário digita.
+
+--------------------------------------------------------------------
+2️⃣ CRIANDO O ESTADO DOS ERROS
+--------------------------------------------------------------------
+
+Depois, criamos estados SEPARADOS para armazenar mensagens de erro.
+Cada campo tem seu próprio erro.
+
+Exemplo real:
+
+const [erroNome, setErroNome] = useState("");
+const [erroEmail, setErroEmail] = useState("");
+const [erroMensagem, setErroMensagem] = useState("");
+
+Se a string estiver vazia (""), significa que o campo está válido.
+
+--------------------------------------------------------------------
+3️⃣ FUNÇÃO REAL DE VALIDAÇÃO DO NOME
+--------------------------------------------------------------------
+
+Aqui está uma função REAL usada no projeto:
+
+const validarNome = (nome) => {
+  if (!nome.trim()) return "Digite seu nome.";
+  if (nome.trim().length < 3)
+    return "O nome deve ter pelo menos 3 caracteres.";
+  return "";
+};
+
+O que acontece aqui:
+- trim() remove espaços vazios
+- verifica se o campo está vazio
+- verifica se tem pelo menos 3 caracteres
+- retorna erro ou string vazia
+
+--------------------------------------------------------------------
+4️⃣ FUNÇÃO REAL DE VALIDAÇÃO DO EMAIL
+--------------------------------------------------------------------
+
+Validação de email feita com Regex (padrão de mercado):
+
+const validarEmail = (email) => {
+  const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+
+  if (!email.trim()) return "Digite seu email.";
+  if (!emailRegex.test(email)) return "Digite um email válido.";
+  return "";
+};
+
+Aqui garantimos que o email tenha o formato:
+usuario@dominio.com
+
+--------------------------------------------------------------------
+5️⃣ FUNÇÃO REAL DE VALIDAÇÃO DA MENSAGEM
+--------------------------------------------------------------------
+
+const validarMensagem = (mensagem) => {
+  if (!mensagem.trim()) return "Digite sua mensagem.";
+  if (mensagem.trim().length < 10)
+    return "A mensagem deve ter pelo menos 10 caracteres.";
+  return "";
+};
+
+Isso evita mensagens vazias ou muito curtas.
+
+--------------------------------------------------------------------
+6️⃣ VALIDAÇÃO EM TEMPO REAL (onChange)
+--------------------------------------------------------------------
+
+Aqui está um input REAL com validação enquanto o usuário digita:
+
+<input
+  type="text"
+  value={nome}
+  onChange={(e) => {
+    setNome(e.target.value);
+    setErroNome(validarNome(e.target.value));
+  }}
+/>
+
+O que acontece:
+1. O valor do input é atualizado
+2. A função de validação roda
+3. O erro aparece ou some automaticamente
+
+Isso melhora MUITO a experiência do usuário.
+
+--------------------------------------------------------------------
+7️⃣ MOSTRANDO O ERRO NA TELA
+--------------------------------------------------------------------
+
+Exemplo REAL de como mostrar o erro:
+
+{erroNome && (
+  <p className="text-red-400 text-sm mt-1">
+    {erroNome}
+  </p>
+)}
+
+Isso só aparece se existir erro.
+
+--------------------------------------------------------------------
+8️⃣ VALIDAÇÃO FINAL NO SUBMIT
+--------------------------------------------------------------------
+
+Mesmo com validação visual, SEMPRE validamos tudo no submit:
+
+const enviarFormulario = (e) => {
+  e.preventDefault();
+
+  const erroNomeValidado = validarNome(nome);
+  const erroEmailValidado = validarEmail(email);
+  const erroMensagemValidada = validarMensagem(mensagem);
+
+  setErroNome(erroNomeValidado);
+  setErroEmail(erroEmailValidado);
+  setErroMensagem(erroMensagemValidada);
+
+  if (erroNomeValidado || erroEmailValidado || erroMensagemValidada) {
+    return; // bloqueia o envio
+  }
+
+  // aqui o formulário pode ser enviado com segurança
+};
+
+Isso garante que NENHUM dado inválido passe.
+
+--------------------------------------------------------------------
+9️⃣ DESABILITANDO O BOTÃO DE ENVIO
+--------------------------------------------------------------------
+
+Exemplo REAL de bloqueio do botão:
+
+const formularioInvalido =
+  erroNome || erroEmail || erroMensagem || !nome || !email || !mensagem;
+
+<button
+  type="submit"
+  disabled={formularioInvalido}
+>
+  Enviar mensagem
+</button>
+
+Se algo estiver errado, o botão fica desabilitado.
+
+--------------------------------------------------------------------
+🔟 COMO REPLICAR EM OUTRO PROJETO
+--------------------------------------------------------------------
+
+Para reutilizar esse padrão em outro projeto:
+
+1. Crie estados para os campos
+2. Crie estados para os erros
+3. Crie funções de validação separadas
+4. Valide no onChange (tempo real)
+5. Valide novamente no submit
+6. Bloqueie o envio se houver erro
+
+Esse padrão funciona para:
+- Formulário de contato
+- Login
+- Cadastro
+- Qualquer formulário manual
+
+====================================================================
+FIM DO APRENDIZADO
+====================================================================
+-->
