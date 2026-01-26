@@ -4,8 +4,8 @@ export default function Navbar() {
   const [abrirMenu, setAbrirMenu] = useState(false) // estado para controlar o menu
 
   return (
-    <nav className="fixed w-full flex items-center  justify-between px-6 py-4 bg-gray-800
-     text-white z-40 shadow-[0_0_3px_#38bdf8] mix-blend-screen md:backdrop-blur-md
+    <nav className="fixed w-full flex items-center  justify-between px-6 py-4 bg-transparent
+     text-white z-40 shadow-[0_0_3px_#38bdf8] 
  ">
       {/* Logo */}
       <h1 className="text-2xl font-bold">
@@ -15,20 +15,23 @@ export default function Navbar() {
       {/* Menu desktop */}
       <ul className="hidden md:flex gap-8 text-lg 
   bg-slate-900/40 backdrop-blur-md 
-  border border-gray-200 rounded-2xl px-4 py-3
-  shadow-[0_0_15px_#38bdf8] bg-gradient-to-r from-slate-900/40 via-sky-600/40 to-slate-900/40
+  border-b border-gray-200 rounded-2xl px-4 py-3
+  shadow-[0_0_15px_#38bdf8] 
  ">
-        <li><a href="#sobre" className="px-2 py-1 border border-transparent transition-all 
-        duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]
+         <li><a href="#introducao" className="px-2 py-1 border-b border-transparent tranition-all
+        duration-300 hover:border-sky-400  hover:text-sky-400
+        ">Inicio</a></li>
+        <li><a href="#sobre" className="px-2 py-1 border-b border-transparent tranition-all
+        duration-300 hover:border-sky-400  hover:text-sky-400
         ">Sobre</a></li>
-        <li><a href="#projeto" className=" px-2 py-1 border border-transparent tranition-all
-        duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]"
+        <li><a href="#projeto" className=" px-2 py-1 border-b border-transparent tranition-all
+        duration-300 hover:border-sky-400  hover:text-sky-400"
         >Projetos</a></li>
-        <li><a href="#skills" className="px-2 py-1 border border-transparent transition-all 
-      duration-300 hover:border-sky-400 hover:text-sky-500 hover:rounded-md	 hover:shadow-[0_0_10px_#38bdf8]"
+        <li><a href="#skills" className="px-2 py-1 border-b border-transparent tranition-all
+        duration-300 hover:border-sky-400  hover:text-sky-400"
       >Skills</a></li>
-        <li><a href="#contato" className="px-2 py-1 border border-transparent transition-all
-        duration-300 hover:border-sky-400 hover:text-sky-400 hover:rounded-md hover:shadow-[0_0_10px_#38bdf8]"
+        <li><a href="#contato" className="ppx-2 py-1 border-b border-transparent tranition-all
+        duration-300 hover:border-sky-400  hover:text-sky-400"
         >Contato</a></li>
       </ul>
 
@@ -75,17 +78,20 @@ export default function Navbar() {
 
           {/* Links mobile */}
           <ul className="flex flex-col gap-6 text-lg">
+             <li><a href="#introducao" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
+        duration-300 hover:border-sky-400  hover:text-sky-400
+        ">Inicio</a></li>
             <li><a href="#sobre" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
-        duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]"
+        duration-300 hover:border-sky-400  hover:text-sky-400"
          onClick={() => setAbrirMenu(false)}>Sobre</a></li>
             <li><a href="#projeto" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
-        duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]" 
+        duration-300 hover:border-sky-400  hover:text-sky-400 " 
         onClick={() => setAbrirMenu(false)}>Projetos</a></li>
             <li><a href="#skills" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
-        duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]"
+        duration-300 hover:border-sky-400  hover:text-sky-400 "
          onClick={() => setAbrirMenu(false)}>Skills</a></li>
             <li><a href="#contato" className="px-2 py-1 border-b-[3px] border-sky-400 transition-all 
-        duration-300 hover:border-sky-400 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]"
+        duration-300 hover:border-sky-400  hover:text-sky-400 "
          onClick={() => setAbrirMenu(false)}>Contato</a></li>
           </ul>
 

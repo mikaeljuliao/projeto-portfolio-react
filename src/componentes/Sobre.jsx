@@ -5,8 +5,9 @@ export default function Sobre() {
     <section
       id="sobre"
       className="min-h-screen w-full flex flex-col items-center justify-center 
-      px-6 md:px-16 text-white relative py-40 md:py-12"
+      px-6 md:px-16 text-white relative py-40 md:py-12 bg-[#02040f]"
     >
+      
       {/* Título da seção */}
       <h1 className="text-3xl md:text-4xl font-semibold mt-10 text-center py-11">
         Olá👋

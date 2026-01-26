@@ -11,16 +11,9 @@ import Obrigado from "./componentes/Obrigado.jsx";
 function App() {
   return (
     <Router>
-      <div className='relative w-full h-full overflow-hidden'>
+      <div className='relative w-full h-full overflow-hidden '>
 
-        <video 
-          className="fixed top-0 left-0 w-full h-full object-cover -z-20" 
-          src="/video/1003.mp4"
-          muted 
-          autoPlay 
-          loop 
-          playsInline
-        />
+         
 
         <NavBar />
 

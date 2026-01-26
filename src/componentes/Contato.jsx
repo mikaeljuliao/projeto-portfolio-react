@@ -64,7 +64,9 @@ ${mensagem}
     erroNome || erroEmail || erroMensagem || !nome || !email || !mensagem;
 
   return (
-    <section id="contato" className="w-full py-32 px-6">
+    <section id="contato" className="w-full py-32 px-6 bg-gradient-to-b 
+from-[#020617] 
+to-[#021024]">
       {/* Título */}
       <div className="text-center max-w-3xl mx-auto mb-20">
         <h2 className="text-4xl font-bold text-white mb-4">

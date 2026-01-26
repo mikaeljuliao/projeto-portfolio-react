@@ -2,8 +2,12 @@ import React from 'react'
 
 export default function Introducao () {
   return (
-    <section className='relative w-full min-h-screen flex flex-col-reverse md:flex-row 
-      items-center justify-between text-white px-6 md:px-16'>
+    <section  id="introducao" className='relative w-full min-h-screen flex flex-col-reverse md:flex-row 
+      items-center justify-between text-white px-6 md:px-16 
+       bg-gradient-to-b from-[#020617] via-[#020617] to-[#020a1a]
+' >
+
+        
 
       {/* --- TEXTO --- */}
       <div className='w-full md:w-1/2 flex flex-col gap-5 mt-12 md:mt-0'>
