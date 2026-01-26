@@ -8,6 +8,7 @@ import Skills from './componentes/Skills'
 import Contato from './componentes/Contato'
 import Obrigado from "./componentes/Obrigado.jsx";
 import Footer from "./componentes/Footer.jsx";
+import Experiencia from "./componentes/Experiencia.jsx";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Sobre />
               <Projetos />
               <Skills />
+              <Experiencia />
               <Contato />
               <Footer />
             </>

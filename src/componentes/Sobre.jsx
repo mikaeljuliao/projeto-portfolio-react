@@ -50,6 +50,7 @@ export default function Sobre() {
             <h4 className="text-sm uppercase tracking-widest text-gray-400 mb-4">
               Tecnologias principais
             </h4>
+            <p className="text-sm tracking-widest text-white mb-4">Tecnologias mais utilizadas nos meus projetos</p>
 
             <div className="flex flex-wrap gap-3">
               {[

@@ -18,9 +18,6 @@ export default function Navbar() {
   border-b border-gray-200 rounded-2xl px-4 py-3
   shadow-[0_0_15px_#38bdf8] 
  ">
-         <li><a href="#introducao" className="px-2 py-1 border-b border-transparent tranition-all
-        duration-300 hover:border-sky-400  hover:text-sky-400
-        ">Inicio</a></li>
         <li><a href="#sobre" className="px-2 py-1 border-b border-transparent tranition-all
         duration-300 hover:border-sky-400  hover:text-sky-400
         ">Sobre</a></li>
@@ -30,6 +27,9 @@ export default function Navbar() {
         <li><a href="#skills" className="px-2 py-1 border-b border-transparent tranition-all
         duration-300 hover:border-sky-400  hover:text-sky-400"
       >Skills</a></li>
+        <li><a href="#experiencias" className="px-2 py-1 border-b border-transparent tranition-all
+        duration-300 hover:border-sky-400  hover:text-sky-400
+        ">Experiência</a></li>
         <li><a href="#contato" className="ppx-2 py-1 border-b border-transparent tranition-all
         duration-300 hover:border-sky-400  hover:text-sky-400"
         >Contato</a></li>
