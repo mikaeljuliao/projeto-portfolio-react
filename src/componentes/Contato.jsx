@@ -71,7 +71,7 @@ to-[#021024]">
       <div className="text-center max-w-3xl mx-auto mb-20">
         <h2 className="text-4xl font-bold text-white mb-4">
           Vamos conversar?
-        </h2>
+        </h2>9
         <p className="text-gray-400">
           Interessado em trabalhar juntos? Entre em contato e vamos discutir seu
           projeto.
@@ -186,9 +186,13 @@ to-[#021024]">
           </div>
           <div  className="flex flex-col">
             <p className="text-gray-400 text-sm">Email</p>
+            <a   href="mailto:mikaeljuliao56@gmail.com"
+             aria-label="Enviar e-mail"
+             >
             <p className="text-white font-medium">
               mikaeljuliao56@gmail.com
             </p>
+            </a>
           </div>
           </div>
 
@@ -199,9 +203,14 @@ to-[#021024]">
           </div>
           <div  className="flex flex-col">
             <p className="text-gray-400 text-sm">linkedin</p>
+            <a href="https://www.linkedin.com/in/mikael-juliao-dev"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn">
             <p className="text-white font-medium">
-              mikaeljuliao56@gmail.com
+             linkedin.com/in/mikael-juliao-dev
             </p>
+            </a>
           </div>
           </div>
             
@@ -212,9 +221,16 @@ to-[#021024]">
           </div>
           <div  className="flex flex-col">
             <p className="text-gray-400 text-sm">github</p>
-            <p className="text-white font-medium">
-              mikaeljuliao56@gmail.com
+            <a
+            href="https://github.com/mikaeljuliao"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <p className="text-white font-medium transition hover:text-sky-400">
+              github.com/mikaeljuliao
             </p>
+            </a>
           </div>
           </div>
 
