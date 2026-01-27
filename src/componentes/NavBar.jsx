@@ -78,9 +78,7 @@ export default function Navbar() {
 
           {/* Links mobile */}
           <ul className="flex flex-col gap-6 text-lg">
-             <li><a href="#introducao" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
-        duration-300 hover:border-sky-400  hover:text-sky-400
-        ">Inicio</a></li>
+             
             <li><a href="#sobre" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
         duration-300 hover:border-sky-400  hover:text-sky-400"
          onClick={() => setAbrirMenu(false)}>Sobre</a></li>
@@ -90,6 +88,9 @@ export default function Navbar() {
             <li><a href="#skills" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
         duration-300 hover:border-sky-400  hover:text-sky-400 "
          onClick={() => setAbrirMenu(false)}>Skills</a></li>
+          <li><a href="#experiencias" className="px-2 py-1  border-b-[3px] border-sky-400 transition-all 
+        duration-300 hover:border-sky-400  hover:text-sky-400
+        ">Experiência</a></li>
             <li><a href="#contato" className="px-2 py-1 border-b-[3px] border-sky-400 transition-all 
         duration-300 hover:border-sky-400  hover:text-sky-400 "
          onClick={() => setAbrirMenu(false)}>Contato</a></li>
