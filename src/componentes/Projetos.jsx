@@ -32,7 +32,7 @@ const projeto3 = [
 ];
 
   return (
-    <section id='projeto' className='text-white w-full min-h-screen flex flex-col items-center justify-center py-28
+    <section id='projeto' className='text-white w-full min-h-screen flex flex-col items-center justify-center py-32
     bg-gradient-to-br 
 from-[#02040f] 
 via-[#020617] 

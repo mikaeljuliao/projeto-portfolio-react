@@ -4,13 +4,13 @@ export default function Introducao () {
   return (
     <section  id="introducao" className='relative w-full min-h-screen flex flex-col-reverse md:flex-row 
       items-center justify-between text-white px-6 md:px-16 
-       bg-gradient-to-b from-[#020617] via-[#020617] to-[#020a1a]
+       bg-gradient-to-b from-[#020617] via-[#020617] to-[#020a1a] py-24
 ' >
 
         
 
       {/* --- TEXTO --- */}
-      <div className='w-full md:w-1/2 flex flex-col gap-5 mt-12 md:mt-0'>
+      <div className='w-full md:w-1/2 flex flex-col gap-5 mt-12 y-6 md:mt-0 '>
         
         {/* --- BADGE DISPONÍVEL --- */}
         <div className="flex items-center gap-3 px-4 py-2 

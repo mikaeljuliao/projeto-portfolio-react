@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="w-full min-h-screen flex flex-col items-center justify-center py-28 px-6 md:px-16 text-white
+      className="w-full min-h-screen flex flex-col items-center justify-center py-32 px-6 md:px-16 text-white
       bg-[#010314]"
     >
         {/* OVERLAY */}

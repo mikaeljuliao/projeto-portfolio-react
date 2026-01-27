@@ -5,9 +5,9 @@ export default function Sobre() {
     <section
       id="sobre"
       className="
-        w-full min-h-screen px-6 md:px-20 py-24
+        w-full min-h-screen px-6 md:px-20 py-32
         bg-gradient-to-b from-[#020617] via-[#020617] to-[#020a1a]
-        text-white
+        text-white 
       "
     >
       {/* TÍTULO */}
