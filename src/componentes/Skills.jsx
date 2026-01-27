@@ -56,7 +56,7 @@ export default function Skills() {
     <strong className="border-b-2 border-sky-600">responsabilidade</strong> e{" "}
     <strong className="border-b-2 border-sky-600">proatividade</strong>, além de facilidade em{" "}
     <strong className="border-b-2 border-sky-600">aprender</strong>,{" "}
-    <strong className="border-b-2 border-sky-600">me adaptar a mudanças</strong> e{" "}''
+    <strong className="border-b-2 border-sky-600">me adaptar a mudanças</strong> e{" "}
     <strong className="border-b-2 border-sky-600">trabalhar com foco em resultados</strong>.
   </p>
 </div>

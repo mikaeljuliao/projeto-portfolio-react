@@ -78,7 +78,7 @@ to-[#021024]">
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Formulário */}
         <div className="bg-slate-900/40 border border-white/10 rounded-2xl p-8 shadow-lg">
           <h3 className="text-xl font-semibold text-white mb-6">
