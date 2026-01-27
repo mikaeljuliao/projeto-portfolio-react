@@ -49,22 +49,22 @@ export default function Experiencia() {
             <div
               key={index}
               className={`relative flex w-full justify-center ${
-                esquerda ? "md:justify-start" : "md:justify-end"
+                esquerda ? "lg:justify-start" : "lg:justify-end"
               }`}
             >
               {/* RECORTE — APENAS NO MOBILE */}
               <div
-                className="block md:hidden absolute left-1/2 -translate-x-1/2 w-10 h-full bg-[#020617] z-20"
+                className="block lg:hidden absolute left-1/2 -translate-x-1/2 w-10 h-full bg-[#020617] z-20"
                 aria-hidden
               />
 
               {/* BOLINHA */}
-             <span className="absolute left-1/2 -top-8 md:top-8 w-4 h-4 rounded-full bg-sky-400 -translate-x-1/2 z-30" />
+             <span className="absolute left-1/2 -top-8 lg:top-8 w-4 h-4 rounded-full bg-sky-400 -translate-x-1/2 z-30" />
 
               {/* CARD */}
               <div
-                className={`relative z-30 w-full md:max-w-md bg-slate-900 border border-white/10 rounded-xl p-6
-                  ${esquerda ? "md:translate-x-16" : "md:-translate-x-16"}
+                className={`relative z-30 w-full lg:max-w-md bg-slate-900 border border-white/10 rounded-xl p-6
+                  ${esquerda ? "lg:translate-x-12" : "lg:-translate-x-12"}
                 `}
               >
                 <span className="text-sky-400 text-sm block mb-1">
