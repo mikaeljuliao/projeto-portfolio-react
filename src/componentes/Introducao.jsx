@@ -10,7 +10,7 @@ export default function Introducao () {
         
 
       {/* --- TEXTO --- */}
-      <div className='w-full md:w-1/2 flex flex-col gap-5 mt-12 y-6 md:mt-0 '>
+      <div className='w-full lg:w-1/2 flex flex-col gap-5 mt-12 y-6 md:mt-0 '>
         
         {/* --- BADGE DISPONÍVEL --- */}
         <div className="flex items-center gap-3 px-4 py-2 
