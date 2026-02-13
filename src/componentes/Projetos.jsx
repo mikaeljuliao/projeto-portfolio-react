@@ -15,13 +15,16 @@ export default function Projetos() {
 
 const projeto2 = [
 
-  "/imagem/portfolio-descktop0.png",
-  "/imagem/portfolio-descktop2.png",
-  "/imagem/portfolio-descktop3.png",
-  "/imagem/portfolio-descktop4.png",
-  "/imagem/portfolio-descktop5.png",
-  "/imagem/portfolio-descktop6.png",
-  "/imagem/portfolio-descktop7.png",
+   "/imagem/meu-portfolio-1.png",
+   "/imagem/meu-portfolio-2.png",
+   "/imagem/meu-portfolio-3.png",
+   "/imagem/meu-portfolio-4.png",
+   "/imagem/meu-portfolio-5.png",
+   "/imagem/meu-portfolio-6.png",
+   "/imagem/meu-portfolio-7.png",
+   "/imagem/meu-portfolio-8.png",
+   "/imagem/meu-portfolio-9.png",
+   "/imagem/meu-portfolio-10.png"
 ];
 
 const projeto3 = [
