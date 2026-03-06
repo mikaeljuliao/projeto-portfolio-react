@@ -61,7 +61,7 @@ export default function Introducao () {
           </button>
 
           <a
-            href="/curriculo/Currículo-Mikael-Julião-Rocha.pdf"
+            href="/curriculo/Currículo-Mikael-julião.pdf"
             download
             className="flex items-center gap-1 text-xl border border-sky-800 px-4 py-3
               rounded-2xl w-fit transition-all duration-300 hover:rounded-md hover:text-sky-400 
