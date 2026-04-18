@@ -262,7 +262,7 @@ to-[#020b1f]'>
     <button className='flex items-end text-lg shadow-[0_0_5px_#38bdf8] border border-sky-800 px-2 py-1 mt-4
       rounded-lg transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]'>
       <i className='bx bx-link-external m-auto p-1'></i> 
-      <a href="#" target="_blank">Websit</a>
+      <a href="https://habit-hunter.netlify.app/" target="_blank">Websit</a>
     </button>
   </div>
 </div>
