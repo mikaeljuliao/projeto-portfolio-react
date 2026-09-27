@@ -7,7 +7,7 @@ export default function Introducao () {
        bg-gradient-to-b from-[#020617] via-[#020617] to-[#020a1a] py-24
 ' >
 
-        
+      
 
       {/* --- TEXTO --- */}
       <div className='w-full md:w-1/2 flex flex-col gap-5 mt-12 y-6 md:mt-0 '>
@@ -61,7 +61,7 @@ export default function Introducao () {
           </button>
 
           <a
-            href="/Currículo-Mikael-julião-frontend.pdf"
+            href="/curriculo/Currículo-Mikael-julião-frontend.pdf"
             download
             className="flex items-center gap-1 text-xl border border-sky-800 px-4 py-3
               rounded-2xl w-fit transition-all duration-300 hover:rounded-md hover:text-sky-400 
