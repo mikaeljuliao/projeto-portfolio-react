@@ -59,15 +59,21 @@ const projeto5 = [
 
 
 const projeto6 = [
-  "/imagem/lumio-1.png",
-  "/imagem/lumio-2.png",
-  "/imagem/lumio-3.png"
+  "/imagem/lumio1.jpg",
+  "/imagem/lumio2.jpg",
+  "/imagem/lumio3.jpg",
+  "/imagem/lumio4.jpg",
+  "/imagem/lumio5.jpg"
 ];
 
 const projeto7 = [
-  "/imagem/dose-facil-1.png",
-  "/imagem/dose-facil-2.png",
-  "/imagem/dose-facil-3.png"
+  "/imagem/dosefacil2.png",
+  "/imagem/dosefacil3.png",
+  "/imagem/dosefacil4.png",
+  "/imagem/dosefacil5.png",
+  "/imagem/dosefacil6.png",
+  "/imagem/dosefacil7.png",
+  "/imagem/dosefacil8.png",
 ];
 
   return (
