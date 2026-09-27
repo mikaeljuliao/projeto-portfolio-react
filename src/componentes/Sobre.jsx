@@ -17,7 +17,7 @@ export default function Sobre() {
         </h2>
 
         <p className="text-gray-400 text-lg">
-          Desenvolvedor Front-end com paixão por criar experiências digitais excepcionais
+          Desenvolvedor Front-end com experiência prática em aplicações web com React, Next.js, JavaScript e TypeScript
         </p>
       </div>
 
@@ -28,8 +28,10 @@ export default function Sobre() {
         <div className="flex flex-col gap-6 text-gray-300 leading-relaxed">
           <p>
             Sou <span className="text-white font-semibold">Mikael Julião da Rocha</span>,
-            desenvolvedor Front-end com foco em criar aplicações web responsivas,
-            bem estruturadas e centradas na experiência do usuário.
+            desenvolvedor Front-end com cerca de 2 anos de experiência prática em
+            aplicações web com React, Next.js, JavaScript e TypeScript, com foco em
+            componentização, refatoração, arquitetura de interfaces, responsividade,
+            performance, acessibilidade e SEO.
           </p>
 
           <p>
@@ -41,8 +43,8 @@ export default function Sobre() {
 
           <p>
             Atualmente atuo como <span className="text-sky-400">Freelancer</span>,
-            sempre buscando evoluir minhas habilidades e aplicar boas práticas
-            em cada projeto entregue.
+            participando do desenvolvimento de funcionalidades desde o levantamento
+            da necessidade até a entrega, além de atuar com Node.js e Firebase (Firestore).
           </p>
 
           {/* TECNOLOGIAS */}
@@ -55,13 +57,15 @@ export default function Sobre() {
             <div className="flex flex-wrap gap-3">
               {[
                 "React",
+                "Next.js",
                 "TypeScript",
                 "JavaScript (ES6+)",
                 "Tailwind CSS",
                 "HTML5",
                 "CSS3",
                 "Git & GitHub",
-                "Figma",
+                "Node.js",
+                "Firebase (Firestore)",
               ].map((tech) => (
                 <span
                   key={tech}
@@ -86,7 +90,7 @@ export default function Sobre() {
             {
               icon: "bx-code-alt",
               title: "Experiência",
-              text: "12 meses de experiência em desenvolvimento front-end, criando aplicações web modernas e performáticas.",
+              text: "Cerca de 2 anos de experiência prática em desenvolvimento front-end, criando aplicações web modernas e performáticas.",
             },
             {
               icon: "bx-palette",
@@ -136,7 +140,7 @@ export default function Sobre() {
       {/* MÉTRICAS */}
       <div className="mt-28 grid grid-cols-2 md:grid-cols-4 gap-10 text-center max-w-6xl mx-auto">
         {[
-          { value: "12+", label: "Meses de experiência" },
+          { value: "2+", label: "Anos de experiência" },
           { value: "5+", label: "Projetos entregues" },
           { value: "1.5+", label: "Anos em Design" },
           { value: "100%", label: "Comprometimento" },

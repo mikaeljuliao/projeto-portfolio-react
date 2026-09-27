@@ -3,16 +3,27 @@ import React from "react";
 export default function Experiencia() {
  const experiencias = [
     {
+      empresa: "Estagiário de Desenvolvimento",
+      cargo: "Desenvolvimento",
+      periodo: "Mai/2026 – Set/2026",
+      descricao: [
+        "Atuação direta na manutenção e evolução do sistema web da empresa, com refatoração de código e melhoria contínua da responsividade da plataforma",
+        "Componentização e padronização do projeto aplicando composition pattern e uso de contexto (React Context), elevando a qualidade e a manutenibilidade do código",
+        "Participação ativa no planejamento e na criação de novas features do produto, do levantamento da necessidade até a entrega",
+        "Atuação com scripts de automação para otimizar tarefas internas do time"
+      ]
+    },
+    {
       empresa: "Freelancer Autônomo",
       cargo: "Desenvolvedor Front-end",
       periodo: "Nov/2024 – Atual",
       descricao: [
-        "Desenvolvimento de interfaces web responsivas utilizando React, JavaScript (ES6+), HTML e CSS",
-        "Criação de componentes reutilizáveis seguindo princípios de Clean Code",
-        "Estilização de aplicações com Tailwind CSS e Bootstrap conforme a necessidade do projeto",
-        "Implementação de melhorias de UX/UI, garantindo navegação intuitiva e acessibilidade básica",
-        "Desenvolvimento de landing pages focadas em performance, conversão e responsividade",
-        "Manutenção, refatoração de código e correção de bugs em projetos existentes"
+        "Atuação com autonomia do discovery ao deploy no desenvolvimento de interfaces web responsivas para clientes diversos",
+        "Estruturação de componentes reutilizáveis em React, reduzindo retrabalho e elevando a qualidade e organização do código",
+        "Desenvolvimento de landing pages de alta performance, com foco em velocidade de carregamento e otimização para SEO",
+        "Criação de automações e agentes com n8n para otimizar processos de clientes",
+        "Correção de bugs e refatorações que aumentam a estabilidade e a performance das aplicações",
+        "Atuação também na arquitetura de software dos projetos entregues"
       ]
     },
     {
@@ -64,7 +75,9 @@ export default function Experiencia() {
               {/* CARD */}
               <div
                 className={`relative z-30 w-full lg:max-w-md bg-slate-900 border border-white/10 rounded-xl p-6
-                  ${esquerda ? "lg:translate-x-12" : "lg:-translate-x-12"}
+                  ${
+                    esquerda ? "lg:translate-x-12" : "lg:-translate-x-12"
+                  }
                 `}
               >
                 <span className="text-sky-400 text-sm block mb-1">

@@ -58,6 +58,24 @@ const projeto5 = [
 ];
 
 
+const projeto6 = [
+  "/imagem/lumio1.jpg",
+  "/imagem/lumio2.jpg",
+  "/imagem/lumio3.jpg",
+  "/imagem/lumio4.jpg",
+  "/imagem/lumio5.jpg"
+];
+
+const projeto7 = [
+  "/imagem/dosefacil2.png",
+  "/imagem/dosefacil3.png",
+  "/imagem/dosefacil4.png",
+  "/imagem/dosefacil5.png",
+  "/imagem/dosefacil6.png",
+  "/imagem/dosefacil7.png",
+  "/imagem/dosefacil8.png",
+];
+
   return (
     <section id='projeto' className='text-white w-full min-h-screen flex flex-col items-center justify-center py-32
     bg-gradient-to-br 
@@ -268,6 +286,88 @@ to-[#020b1f]'>
 </div>
       
    
+    
+      {/* Card 6 */}
+    <div className="">
+      <div className="border-2 border-sky-400 rounded-xl overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+        <Carrosel images={projeto6} />
+      </div>
+
+      <div className="projeto-inf fadeInRight">
+        <h1 className='font-bold text-xl mt-6 mb-3'>
+          <span className="bg-gradient-to-r from-sky-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-gradient-x duration-300 ease-in-out">
+            Lumio
+          </span> Finance
+        </h1>
+
+        <p className='font-semibol'>
+          Aplicação de gestão financeira pessoal que permite registrar despesas por texto ou áudio via WhatsApp e acompanhar
+          tudo em um dashboard web em tempo real. Integra WhatsApp, IA e transcrição de voz, com validação de regras de negócio,
+          persistência em PostgreSQL e comunicação em tempo real. MVP em produção com usuários ativos.
+          
+          Skills:{' '}
+          <strong className="border-b-2 border-sky-600">Next.js</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">React</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">JavaScript</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Node.js</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Express</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">PostgreSQL</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Prisma</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Google Gemini</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Groq/Whisper</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Socket.IO</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Baileys</strong>
+        </p>
+
+        <button className='flex items-end text-lg shadow-[0_0_5px_#38bdf8] border border-sky-800 px-2 py-1 mt-4
+          rounded-lg transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]'>
+          <i className='bx bx-link-external m-auto p-1'></i>
+          <a href="https://lumio-finance-tau.vercel.app/" target="_blank">Websit</a>
+        </button>
+      </div>
+    </div>
+
+      {/* Card 7 */}
+    <div className="">
+      <div className="border-2 border-sky-400 rounded-xl overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+        <Carrosel images={projeto7} />
+      </div>
+
+      <div className="projeto-inf fadeInRight">
+        <h1 className='font-bold text-xl mt-6 mb-3'>
+          <span className="bg-gradient-to-r from-sky-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-gradient-x duration-300 ease-in-out">
+            Dose
+          </span> Fácil
+        </h1>
+
+        <p className='font-semibol'>
+          Aplicação web para organização de medicamentos e rotinas de cuidados, com foco em simplicidade e acessibilidade.
+          Desenvolvida com Next.js App Router, possui geração e gerenciamento de doses, lembretes em tempo real, contagem regressiva,
+          alarmes via Web Audio API, histórico e persistência local.
+          
+          Skills:{' '}
+          <strong className="border-b-2 border-sky-600">Next.js</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">React</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">JavaScript</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Tailwind CSS</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">HTML5</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">CSS3</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">localStorage</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Git/GitHub</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">UX/UI</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Responsividade</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Componentização</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Clean Code</strong>
+        </p>
+
+        <button className='flex items-end text-lg shadow-[0_0_5px_#38bdf8] border border-sky-800 px-2 py-1 mt-4
+          rounded-lg transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]'>
+          <i className='bx bx-link-external m-auto p-1'></i>
+          <a href="https://dose-facil.vercel.app/" target="_blank">Websit</a>
+        </button>
+      </div>
+    </div>
+
     </div>
     </section>
   )
