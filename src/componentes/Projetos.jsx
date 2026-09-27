@@ -58,6 +58,18 @@ const projeto5 = [
 ];
 
 
+const projeto6 = [
+  "/imagem/lumio-1.png",
+  "/imagem/lumio-2.png",
+  "/imagem/lumio-3.png"
+];
+
+const projeto7 = [
+  "/imagem/dose-facil-1.png",
+  "/imagem/dose-facil-2.png",
+  "/imagem/dose-facil-3.png"
+];
+
   return (
     <section id='projeto' className='text-white w-full min-h-screen flex flex-col items-center justify-center py-32
     bg-gradient-to-br 
@@ -268,6 +280,75 @@ to-[#020b1f]'>
 </div>
       
    
+    
+      {/* Card 6 */}
+    <div className="">
+      <div className="border-2 border-sky-400 rounded-xl overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+        <Carrosel images={projeto6} />
+      </div>
+
+      <div className="projeto-inf fadeInRight">
+        <h1 className='font-bold text-xl mt-6 mb-3'>
+          <span className="bg-gradient-to-r from-sky-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-gradient-x duration-300 ease-in-out">
+            Lumio
+          </span> Finance
+        </h1>
+
+        <p className='font-semibol'>
+          Aplicação de gestão financeira pessoal que permite registrar despesas por texto ou áudio via WhatsApp e acompanhar
+          as informações por meio de um dashboard web em tempo real.
+          Registro e interpretação de despesas por texto e áudio, com integração a WhatsApp, IA e transcrição de voz,
+          validação e aplicação de regras de negócio, persistência dos dados em PostgreSQL e dashboard em tempo real.
+          MVP em produção com usuários ativos.
+          
+          Skills:{' '}
+          <strong className="border-b-2 border-sky-600">Next.js</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">React</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">JavaScript</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Node.js</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Express</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">PostgreSQL</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Prisma</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Google Gemini</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Groq/Whisper</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Socket.IO</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Baileys</strong>
+        </p>
+      </div>
+    </div>
+
+      {/* Card 7 */}
+    <div className="">
+      <div className="border-2 border-sky-400 rounded-xl overflow-hidden shadow-[0_0_10px_#38bdf8] hover:shadow-[0_0_20px_#1e40ff]">
+        <Carrosel images={projeto7} />
+      </div>
+
+      <div className="projeto-inf fadeInRight">
+        <h1 className='font-bold text-xl mt-6 mb-3'>
+          <span className="bg-gradient-to-r from-sky-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-gradient-x duration-300 ease-in-out">
+            Dose
+          </span> Fácil
+        </h1>
+
+        <p className='font-semibol'>
+          Aplicação web para organização de medicamentos e rotinas de cuidados de saúde, com foco em simplicidade e
+          acessibilidade. Embora possa ser utilizada por qualquer pessoa, foi pensada principalmente para idosos e pessoas
+          com dificuldade no uso de tecnologia.
+          Desenvolvimento com Next.js App Router, estruturando componentes e regras de negócio por responsabilidade.
+          Implementação de geração e gerenciamento de doses, considerando horários, intervalos, tipos de uso, próximas doses
+          e limites diários. Desenvolvimento de sistema de lembretes em tempo real, com contagem regressiva, alarmes via Web
+          Audio API, repetição, silenciamento e adiamento de doses. Estruturação da lógica temporal e persistência local,
+          incluindo histórico, reconciliação de doses e recuperação do estado da aplicação.
+          
+          Skills:{' '}
+          <strong className="border-b-2 border-sky-600">Next.js</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">React</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">JavaScript</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Tailwind CSS</strong>
+        </p>
+      </div>
+    </div>
+
     </div>
     </section>
   )
