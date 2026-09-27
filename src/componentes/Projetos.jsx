@@ -318,6 +318,12 @@ to-[#020b1f]'>
           <strong className="border-b-2 border-sky-600">Socket.IO</strong>,{' '}
           <strong className="border-b-2 border-sky-600">Baileys</strong>
         </p>
+
+        <button className='flex items-end text-lg shadow-[0_0_5px_#38bdf8] border border-sky-800 px-2 py-1 mt-4
+          rounded-lg transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]'>
+          <i className='bx bx-link-external m-auto p-1'></i>
+          <a href="https://lumio-finance-tau.vercel.app/" target="_blank">Websit</a>
+        </button>
       </div>
     </div>
 
@@ -353,6 +359,12 @@ to-[#020b1f]'>
           <strong className="border-b-2 border-sky-600">Componentização</strong>,{' '}
           <strong className="border-b-2 border-sky-600">Clean Code</strong>
         </p>
+
+        <button className='flex items-end text-lg shadow-[0_0_5px_#38bdf8] border border-sky-800 px-2 py-1 mt-4
+          rounded-lg transition-all duration-300 hover:rounded-md hover:text-sky-400 hover:shadow-[0_0_10px_#38bdf8]'>
+          <i className='bx bx-link-external m-auto p-1'></i>
+          <a href="https://dose-facil.vercel.app/" target="_blank">Websit</a>
+        </button>
       </div>
     </div>
 
