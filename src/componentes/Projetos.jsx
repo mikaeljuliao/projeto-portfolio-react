@@ -296,10 +296,8 @@ to-[#020b1f]'>
 
         <p className='font-semibol'>
           Aplicação de gestão financeira pessoal que permite registrar despesas por texto ou áudio via WhatsApp e acompanhar
-          as informações por meio de um dashboard web em tempo real.
-          Registro e interpretação de despesas por texto e áudio, com integração a WhatsApp, IA e transcrição de voz,
-          validação e aplicação de regras de negócio, persistência dos dados em PostgreSQL e dashboard em tempo real.
-          MVP em produção com usuários ativos.
+          tudo em um dashboard web em tempo real. Integra WhatsApp, IA e transcrição de voz, com validação de regras de negócio,
+          persistência em PostgreSQL e comunicação em tempo real. MVP em produção com usuários ativos.
           
           Skills:{' '}
           <strong className="border-b-2 border-sky-600">Next.js</strong>,{' '}
@@ -331,20 +329,23 @@ to-[#020b1f]'>
         </h1>
 
         <p className='font-semibol'>
-          Aplicação web para organização de medicamentos e rotinas de cuidados de saúde, com foco em simplicidade e
-          acessibilidade. Embora possa ser utilizada por qualquer pessoa, foi pensada principalmente para idosos e pessoas
-          com dificuldade no uso de tecnologia.
-          Desenvolvimento com Next.js App Router, estruturando componentes e regras de negócio por responsabilidade.
-          Implementação de geração e gerenciamento de doses, considerando horários, intervalos, tipos de uso, próximas doses
-          e limites diários. Desenvolvimento de sistema de lembretes em tempo real, com contagem regressiva, alarmes via Web
-          Audio API, repetição, silenciamento e adiamento de doses. Estruturação da lógica temporal e persistência local,
-          incluindo histórico, reconciliação de doses e recuperação do estado da aplicação.
+          Aplicação web para organização de medicamentos e rotinas de cuidados, com foco em simplicidade e acessibilidade.
+          Desenvolvida com Next.js App Router, possui geração e gerenciamento de doses, lembretes em tempo real, contagem regressiva,
+          alarmes via Web Audio API, histórico e persistência local.
           
           Skills:{' '}
           <strong className="border-b-2 border-sky-600">Next.js</strong>,{' '}
           <strong className="border-b-2 border-sky-600">React</strong>,{' '}
           <strong className="border-b-2 border-sky-600">JavaScript</strong>,{' '}
-          <strong className="border-b-2 border-sky-600">Tailwind CSS</strong>
+          <strong className="border-b-2 border-sky-600">Tailwind CSS</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">HTML5</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">CSS3</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">localStorage</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Git/GitHub</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">UX/UI</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Responsividade</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Componentização</strong>,{' '}
+          <strong className="border-b-2 border-sky-600">Clean Code</strong>
         </p>
       </div>
     </div>
